@@ -10,6 +10,11 @@ body {
 p {
   font-size: 14px;
 }
+.display-1 {
+  font-size: calc(2rem + 4.5vw);
+  font-weight: 300;
+  line-height: 1.2;
+}
 .text-dm,
 .nav-link,
 p {
@@ -36,4 +41,19 @@ input {
 }
 a {
   text-decoration: none;
+}
+.pic1 {
+  background-image: url("../public/about1.jpg");
+  background-size: cover;
+  background-position: 5%;
+}
+.pic2 {
+  background-image: url("../public/about2.jpg");
+  background-size: cover;
+  background-position: 5%;
+}
+.pic3 {
+  background-image: url("../public/about1.jpg");
+  background-size: cover;
+  background-position: 5%;
 }
