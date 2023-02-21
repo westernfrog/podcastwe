@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Header(params) {
   return (
     <>
-      <div className="sticky-top bg-grey shadow-sm">
+      <div className="sticky-top bg-grey">
         <nav className="container navbar navbar-expand-lg navbar-dark">
-          <div className="container-fluid py-2">
+          <div className="container-fluid py-2 px-0">
             <Link className="navbar-brand text-poppins text-uppercase" href="/">
               PodcastWe
             </Link>
@@ -20,7 +20,7 @@ export default function Header(params) {
             </button>
 
             <div
-              className="offcanvas offcanvas-start p-1 bg-grey d-lg-none"
+              className="offcanvas offcanvas-start bg-grey d-lg-none py-1"
               tabIndex="-1"
               id="offcanvasExample"
               aria-labelledby="offcanvasExampleLabel"
