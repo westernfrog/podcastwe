@@ -5,35 +5,35 @@ export default function Header(params) {
     <>
       <div className="sticky-top bg-grey shadow-sm">
         <nav className="container navbar navbar-expand-lg navbar-dark">
-          <div class="container-fluid py-2">
-            <Link class="navbar-brand text-poppins text-uppercase" href="/">
+          <div className="container-fluid py-2">
+            <Link className="navbar-brand text-poppins text-uppercase" href="/">
               PodcastWe
             </Link>
             <button
-              class="navbar-toggler border-0 px-0"
+              className="navbar-toggler border-0 px-0"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasExample"
               aria-controls="offcanvasExample"
             >
-              <i class="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-bars"></i>
             </button>
 
             <div
-              class="offcanvas offcanvas-start p-2 bg-grey d-lg-none"
-              tabindex="-1"
+              className="offcanvas offcanvas-start p-2 bg-grey d-lg-none"
+              tabIndex="-1"
               id="offcanvasExample"
               aria-labelledby="offcanvasExampleLabel"
             >
-              <div class="offcanvas-header">
+              <div className="offcanvas-header">
                 <h5
-                  class="offcanvas-title text-light"
+                  className="offcanvas-title text-light"
                   id="offcanvasExampleLabel"
                 >
                   PODCASTWE
                 </h5>
                 <i
-                  class="fa-solid fa-xmark fa-lg text-light"
+                  className="fa-solid fa-xmark fa-lg text-light"
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
                 ></i>
@@ -57,7 +57,10 @@ export default function Header(params) {
                 </ul>
               </div>
             </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
               <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
                 {[
                   { href: "/", label: "Home" },
