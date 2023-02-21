@@ -20,10 +20,11 @@ export default function Header(params) {
             </button>
 
             <div
-              className="offcanvas offcanvas-start p-2 bg-grey d-lg-none"
+              className="offcanvas offcanvas-start p-1 bg-grey d-lg-none"
               tabIndex="-1"
               id="offcanvasExample"
               aria-labelledby="offcanvasExampleLabel"
+              style={{ maxWidth: "270px" }}
             >
               <div className="offcanvas-header">
                 <h5
