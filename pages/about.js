@@ -6,7 +6,7 @@ export default function About(params) {
   return (
     <>
       <div className="container px-0">
-        <div className="fs-1 p-5 text-center d-lg-none text-poppins">
+        <div className="fs-4 p-5 text-center d-lg-none text-poppins text-uppercase">
           About us
         </div>
         <div className="row g-0">
@@ -30,7 +30,7 @@ export default function About(params) {
         </div>
         <div className="row g-0">
           <div
-            className="col-md-4 fs-1 p-5 align-items-center justify-content-center d-lg-flex d-none text-poppins"
+            className="col-md-4 fs-2 p-5 align-items-center justify-content-center d-lg-flex d-none text-poppins text-uppercase"
             style={{
               writingMode: "vertical-rl",
               transform: "rotate(180deg)",
@@ -51,7 +51,7 @@ export default function About(params) {
             engaging and valuable content. Thank you for visiting!
           </div>
           <div
-            className="col-md-4 fs-1 p-5 align-items-center justify-content-center d-lg-flex d-none text-poppins"
+            className="col-md-4 fs-2 p-5 align-items-center justify-content-center d-lg-flex d-none text-poppins text-uppercase"
             style={{
               writingMode: "vertical-rl",
             }}
