@@ -11,7 +11,7 @@ export default function About(params) {
         </div>
         <div className="row g-0">
           <div
-            className="col-md-6 fs-7 p-5 text-center d-flex align-items-center justify-content-between"
+            className="col-md-6 fs-7 p-5 text-center d-flex align-items-center justify-content-center"
             style={{ backgroundColor: "#5C5470" }}
           >
             Discover and listen to the latest podcasts on PodcastWe. Our
@@ -30,17 +30,17 @@ export default function About(params) {
         </div>
         <div className="row g-0">
           <div
-            className="col-md-4 fs-1 p-5 d-flex align-items-center justify-content-between d-lg-flex d-none text-poppins"
+            className="col-md-4 fs-1 p-5 align-items-center justify-content-center d-lg-flex d-none text-poppins"
             style={{
               writingMode: "vertical-rl",
               transform: "rotate(180deg)",
               backgroundColor: "#433751",
             }}
           >
-            About us
+            PodcastWe
           </div>
           <div
-            className="col-md-4 fs-7 p-5 d-flex align-items-center justify-content-between text-center text-dark"
+            className="col-md-4 fs-7 p-5 d-flex align-items-center justify-content-center text-center text-dark"
             style={{ backgroundColor: "#DBD8E3" }}
           >
             At PodcastWe, our mission is to inform, educate, and inspire our
@@ -51,7 +51,7 @@ export default function About(params) {
             engaging and valuable content. Thank you for visiting!
           </div>
           <div
-            className="col-md-4 fs-1 p-5 d-flex align-items-center justify-content-between d-lg-flex d-none text-poppins"
+            className="col-md-4 fs-1 p-5 align-items-center justify-content-center d-lg-flex d-none text-poppins"
             style={{
               writingMode: "vertical-rl",
             }}
