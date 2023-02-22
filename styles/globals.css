@@ -1,9 +1,18 @@
 body {
-  background-color: #2a2438;
   color: #fff;
+  background: linear-gradient(
+    to bottom right,
+    #5c5470 0%,
+    #352f44 50%,
+    #352f44 50%,
+    #2a2438 100%
+  );
 }
 .bg-grey {
   background-color: #2a2438;
+}
+.bg-purple {
+  background-color: #352f44;
 }
 .fs-7,
 .nav-link,
@@ -43,17 +52,24 @@ a {
   text-decoration: none;
 }
 .pic1 {
-  background-image: url("../public/about1.jpg");
+  background-image: url("../public/image1.jpg");
   background-size: cover;
   background-position: 5%;
 }
 .pic2 {
-  background-image: url("../public/about2.jpg");
+  background-image: url("../public/image3.jpg");
   background-size: cover;
   background-position: 5%;
 }
 .pic3 {
-  background-image: url("../public/about1.jpg");
+  background-image: url("../public/image2.jpg");
   background-size: cover;
   background-position: 5%;
+}
+.btn-shrink:active {
+  transform: scale(0.97);
+  transition: transform 100ms ease-in-out;
+}
+.btn-shrink {
+  transition: transform 100ms ease-in-out;
 }

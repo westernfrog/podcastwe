@@ -3,18 +3,18 @@ import Link from "next/link";
 export default function Overview(params) {
   return (
     <>
-      <div className="container my-3 my-lg-5 bg-grey">
+      <div className="container my-3 my-lg-5">
         <div className="row display-1 text-poppins text-uppercase">
           <div className="col-sm text-start">listen</div>
-          <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 shadow"></div>
+          <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 shadow image"></div>
           <div className="col-sm">new</div>
-          <div className="col-sm-2 d-lg-block d-none pic2 rounded-pill my-3 shadow"></div>
+          <div className="col-sm-2 d-lg-block d-none pic3 rounded-pill my-3 shadow image"></div>
           <div className="col-sm text-start">podcast</div>
-          <div className="col-sm-3 d-lg-block d-none pic2 rounded-pill my-3 shadow"></div>
+          <div className="col-sm-3 d-lg-block d-none pic2 rounded-pill my-3 shadow image"></div>
           <div className="col-sm">order</div>
         </div>
 
-        <div className="row my-5 text-dm">
+        <div className="row my-2 my-lg-5 text-dm">
           <div className="col-md-6">
             <p className="opacity-50 pe-3 fs-6">
               We are a team of writers and bloggers who are passionate about
@@ -24,7 +24,7 @@ export default function Overview(params) {
             </p>
             <div className="col-lg-4 d-grid">
               <Link href="/contact" className="d-grid">
-                <button className="btn btn-outline-light btn-sm my-3 py-2 rounded shadow-sm">
+                <button className="btn btn-outline-light btn-sm btn-shrink my-3 py-2 rounded shadow-sm">
                   Get Started
                   <i
                     class="fa-solid fa-arrow-up-long ms-2"

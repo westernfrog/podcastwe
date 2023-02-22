@@ -1,6 +1,6 @@
 import Image from "next/image";
-import about1 from "../public/about1.jpg";
-import about2 from "../public/about2.jpg";
+import image1 from "../public/image1.jpg";
+import image2 from "../public/image2.jpg";
 
 export default function About(params) {
   return (
@@ -21,7 +21,7 @@ export default function About(params) {
           <div className="col-md-6">
             <Image
               className="img-fluid"
-              src={about1}
+              src={image1}
               alt=""
               width={640}
               height={360}
@@ -73,7 +73,7 @@ export default function About(params) {
           <div className="col-md-6">
             <Image
               className="img-fluid"
-              src={about2}
+              src={image2}
               alt=""
               width={640}
               height={360}
