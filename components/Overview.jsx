@@ -14,9 +14,9 @@ export default function Overview(params) {
           <div className="col-sm">order</div>
         </div>
 
-        <div className="row my-2 my-lg-5 text-dm">
+        <div className="row mt-2 mt-lg-5 text-dm">
           <div className="col-md-6">
-            <p className="opacity-50 pe-3 fs-6">
+            <p className="text-muted pe-3 fs-6">
               We are a team of writers and bloggers who are passionate about
               sharing our thoughts and ideas with the world. Our mission is to
               provide high-quality content that informs, educates, and inspires
@@ -24,7 +24,7 @@ export default function Overview(params) {
             </p>
             <div className="col-lg-4 d-grid">
               <Link href="/contact" className="d-grid">
-                <button className="btn btn-light btn-sm btn-shrink my-3 py-2 rounded shadow-sm">
+                <button className="btn btn-outline-light btn-sm btn-shrink my-3 py-2 rounded shadow-sm">
                   Get Started
                   <i
                     class="fa-solid fa-arrow-up-long ms-2"
@@ -86,7 +86,7 @@ export default function Overview(params) {
             <h1 className="fs-5 text-md-start">Top Podcast of the week</h1>
           </div>
           <div
-            className="container d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded m-3"
+            className="d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded-up mt-3"
             style={{ width: "auto", height: 400 }}
           ></div>
         </div>

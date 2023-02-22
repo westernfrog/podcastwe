@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Image from "next/image";
 import image1 from "../public/image1.jpg";
 import image2 from "../public/image2.jpg";
@@ -81,6 +82,7 @@ export default function About(params) {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

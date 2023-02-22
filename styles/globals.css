@@ -40,6 +40,10 @@ button,
 input {
   box-shadow: none !important;
 }
+.rounded-up {
+  border-top-right-radius: 50px !important;
+  border-top-left-radius: 50px !important;
+}
 .rounded {
   border-radius: 50px !important;
 }
