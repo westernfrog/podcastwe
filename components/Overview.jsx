@@ -6,11 +6,11 @@ export default function Overview(params) {
       <div className="container my-3 my-lg-5">
         <div className="row display-1 text-poppins text-uppercase">
           <div className="col-sm text-start">listen</div>
-          <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 shadow image"></div>
+          <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 shadow"></div>
           <div className="col-sm">new</div>
-          <div className="col-sm-2 d-lg-block d-none pic3 rounded-pill my-3 shadow image"></div>
+          <div className="col-sm-2 d-lg-block d-none pic3 rounded-pill my-3 shadow"></div>
           <div className="col-sm text-start">podcast</div>
-          <div className="col-sm-3 d-lg-block d-none pic2 rounded-pill my-3 shadow image"></div>
+          <div className="col-sm-3 d-lg-block d-none pic2 rounded-pill my-3 shadow"></div>
           <div className="col-sm">order</div>
         </div>
 
@@ -24,7 +24,7 @@ export default function Overview(params) {
             </p>
             <div className="col-lg-4 d-grid">
               <Link href="/contact" className="d-grid">
-                <button className="btn btn-outline-light btn-sm btn-shrink my-3 py-2 rounded shadow-sm">
+                <button className="btn btn-light btn-sm btn-shrink my-3 py-2 rounded shadow-sm">
                   Get Started
                   <i
                     class="fa-solid fa-arrow-up-long ms-2"
@@ -33,18 +33,9 @@ export default function Overview(params) {
                 </button>
               </Link>
             </div>
-            <div className="col-sm my-4">
-              <h1 className="fs-5">Support by</h1>
-              <filter id="grayscale">
-                <feColorMatrix
-                  type="matrix"
-                  values="0.3333 0.3333 0.3333 0 0
-            0.3333 0.3333 0.3333 0 0
-            0.3333 0.3333 0.3333 0 0
-            0 0 0 1 0"
-                />
-              </filter>
-              <div className="row my-3 g-3">
+            <div className="col-sm my-4 text-center">
+              <h1 className="fs-5 text-md-start">Support by</h1>
+              <div className="row my-3 g-3 text-center mx-auto text-md-start">
                 <div className="col">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -91,9 +82,13 @@ export default function Overview(params) {
               </div>
             </div>
           </div>
-          <div className="col-md-6 my-5 my-lg-0">
-            <h1 className="fs-5">Top Podcast of the week</h1>
+          <div className="col-md-6 my-5 my-lg-0 text-center">
+            <h1 className="fs-5 text-md-start">Top Podcast of the week</h1>
           </div>
+          <div
+            className="container d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded m-3"
+            style={{ width: "auto", height: 400 }}
+          ></div>
         </div>
       </div>
     </>

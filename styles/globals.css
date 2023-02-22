@@ -1,18 +1,12 @@
 body {
   color: #fff;
-  background: linear-gradient(
-    to bottom right,
-    #5c5470 0%,
-    #352f44 50%,
-    #352f44 50%,
-    #2a2438 100%
-  );
+  background: radial-gradient(circle at top left, #180a0a, #000);
 }
-.bg-grey {
-  background-color: #2a2438;
+.bg-red {
+  background-color: #180a0a;
 }
-.bg-purple {
-  background-color: #352f44;
+.bg-grad {
+  background: linear-gradient(to top right, #180a0a 0%, #000 100%);
 }
 .fs-7,
 .nav-link,
@@ -40,13 +34,14 @@ h6,
 }
 .nav-link {
   margin: 0 10px;
+  color: #fff;
 }
 button,
 input {
   box-shadow: none !important;
 }
 .rounded {
-  border-radius: 15px !important;
+  border-radius: 50px !important;
 }
 a {
   text-decoration: none;
@@ -75,4 +70,9 @@ a {
 }
 .filter {
   filter: grayscale(100%) brightness(200%);
+  transition: filter 300ms ease-in-out;
+}
+.filter:hover {
+  filter: grayscale(0%);
+  transition: filter 300ms ease-in-out;
 }
