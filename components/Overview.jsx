@@ -1,5 +1,4 @@
-import Link from "next/link";
-import Footer from "./Footer";
+import Buttons from "./Buttons";
 import Support from "./Support";
 import TopPodcastCard from "./Top-Podcast-Card";
 
@@ -13,7 +12,7 @@ export default function Overview(params) {
   ];
   return (
     <>
-      <div className="container my-3 my-lg-5">
+      <div className="container my-3 my-lg-4">
         <div className="row display-1 text-poppins text-uppercase">
           <div className="col-sm">listen</div>
           <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 shadow"></div>
@@ -32,24 +31,14 @@ export default function Overview(params) {
               provide high-quality content that informs, educates, and inspires
               our readers.
             </p>
-            <div className="col-lg-4 d-grid">
-              <Link href="/contact" className="d-grid">
-                <button className="btn btn-outline-light btn-sm btn-shrink my-3 py-2 rounded shadow-sm">
-                  Get Started
-                  <i
-                    class="fa-solid fa-arrow-up-long ms-2"
-                    style={{ transform: "rotate(45deg)" }}
-                  ></i>
-                </button>
-              </Link>
-            </div>
+            <Buttons url="contact" html="Get Started" />
             <Support />
           </div>
           <div
             className="container-fluid col-md-6 my-5 my-lg-0 text-center overflow-auto"
             style={{ maxHeight: "230px" }}
           >
-            <h1 className="fs-5 text-md-start mb-3">Top Podcast of the week</h1>
+            <h1 className="fs-5 text-md-start mb-4">Top Podcast of the week</h1>
             <div className="text-md-start">
               <ul className="list-group list-group-flush">
                 {topPodcasts.map((podcast, index) => (
@@ -64,7 +53,7 @@ export default function Overview(params) {
             </div>
           </div>
           <div
-            className="d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded-up mt-3 shadow"
+            className="d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded-left mt-3 shadow"
             style={{ width: "auto", height: 400 }}
           ></div>
         </div>

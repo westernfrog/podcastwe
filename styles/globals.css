@@ -40,7 +40,27 @@ button,
 input {
   box-shadow: none !important;
 }
-.rounded-up {
+.rounded-left {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.rounded-right {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.rounded-top-right {
+  border-top-right-radius: 50px;
+}
+.rounded-top-left {
+  border-top-left-radius: 50px;
+}
+.rounded-bottom-right {
+  border-bottom-right-radius: 50px;
+}
+.rounded-bottom-left {
+  border-bottom-left-radius: 50px;
+}
+.rounded-left {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
