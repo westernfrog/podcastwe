@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 
 export default function TopPodcastCard(props) {
-  const [width, setWidth] = useState("80%");
+  const [width, setWidth] = useState("82%");
 
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth <= 768) {
         setWidth("100%");
       } else {
-        setWidth("80%");
+        setWidth("82%");
       }
     }
     window.addEventListener("resize", handleResize);

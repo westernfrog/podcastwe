@@ -10,7 +10,7 @@ export default function Footer(params) {
               href="/"
               class="d-flex align-items-center mb-3 link-light text-decoration-none"
             >
-              <h6>PodcastWe</h6>
+              <h6>PODCASTWE</h6>
             </Link>
             <p class="text-muted">
               We are a team of passionate writers dedicated to creating
