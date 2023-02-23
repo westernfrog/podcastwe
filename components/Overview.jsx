@@ -15,11 +15,11 @@ export default function Overview(params) {
     <>
       <div className="container my-3 my-lg-5">
         <div className="row display-1 text-poppins text-uppercase">
-          <div className="col-sm text-start">listen</div>
+          <div className="col-sm">listen</div>
           <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 shadow"></div>
           <div className="col-sm">new</div>
           <div className="col-sm-2 d-lg-block d-none pic3 rounded-pill my-3 shadow"></div>
-          <div className="col-sm text-start">podcast</div>
+          <div className="col-sm">podcast</div>
           <div className="col-sm-3 d-lg-block d-none pic2 rounded-pill my-3 shadow"></div>
           <div className="col-sm">order</div>
         </div>
