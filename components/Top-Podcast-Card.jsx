@@ -25,9 +25,7 @@ export default function TopPodcastCard(props) {
         }
         width={width}
         height="100"
-        allowfullscreen=""
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
       ></iframe>
     </>
   );

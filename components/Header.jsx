@@ -46,7 +46,7 @@ export default function Header(params) {
                 <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
                   {[
                     { href: "/", label: "Home" },
-                    { href: "/genre", label: "Genre" },
+                    { href: "/blog", label: "Blog" },
                     { href: "/news", label: "News" },
                     { href: "/trending", label: "Trending" },
                     { href: "/events", label: "Events" },
@@ -68,7 +68,7 @@ export default function Header(params) {
               <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
                 {[
                   { href: "/", label: "Home" },
-                  { href: "/genre", label: "Genre" },
+                  { href: "/blog", label: "Blog" },
                   { href: "/news", label: "News" },
                   { href: "/trending", label: "Trending" },
                   { href: "/events", label: "Events" },

@@ -3,19 +3,19 @@ export default function NewsCard(props) {
   return (
     <>
       <div
-        className={"border border-dark shadow " + props.class}
+        className={"border border-dark " + props.class}
         style={{ width: width, height: 300, position: "relative" }}
       >
         <div
-          class="card bg-transparent border-0 rounded"
+          className="card bg-transparent border-0 rounded"
           style={{
             position: "absolute",
             bottom: 0,
           }}
         >
-          <div class="card-footer border-0 bg-transparent">
+          <div className="card-footer border-0 bg-transparent">
             <h4>{props.title}</h4>
-            <p class="text-muted">{props.desc}</p>
+            <p className="text-muted">{props.desc}</p>
           </div>
         </div>
       </div>

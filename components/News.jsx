@@ -19,32 +19,32 @@ export default function News(params) {
             <Buttons url="contact" html="See More" />
           </div>
         </div>
-        <div className="container row my-4 gap-4 d-flex align-items-center justify-content-between">
+        <div className="row my-4 gap-4 d-flex justify-content-center">
           <NewsCard
             class="col-md-4 rounded-top-left pic3"
-            title="How to make"
-            desc="Last updated 3 mins ago"
+            title="Podcast equipment and technology"
+            desc="For quality podcast recordings, beginners require appropriate equipment and technology, such as a digital audio recorder..."
           />
           <NewsCard
-            class="col-md-8 rounded-top-right pic2"
+            class="col-md-8 rounded-top-right pic3"
             width={824}
-            title="How to make"
-            desc="Last updated 3 mins ago"
+            title="Podcast hosting and distribution"
+            desc="Podcast hosting and distribution means the service that stores and serves your audio files to the listeners..."
           />
           <NewsCard
             class="col-md-4 rounded-bottom-left pic3"
-            title="How to make"
-            desc="Last updated 3 mins ago"
+            title="Podcast marketing and promotion "
+            desc="Podcast marketing and promotion refer to the activities aimed at increasing the visibility and reach of your podcast to attract more listeners and grow your audience..."
           />
           <NewsCard
             class="col-md-4 pic1"
-            title="How to make"
-            desc="Last updated 3 mins ago"
+            title="Podcast storytelling and narrative structure"
+            desc="Podcast storytelling refers to the art of using words, sound and music to crate an engaging and immersive audio experience for listeners... "
           />
           <NewsCard
             class="col-md-4 rounded-bottom-right pic3"
-            title="How to make"
-            desc="Last updated 3 mins ago"
+            title="Podcast audience growth "
+            desc="Podcast audience growth refers to the process of increasing the number of listeners for you podcast. Here are some strategies for growing your podcast audience..."
           />
         </div>
       </div>

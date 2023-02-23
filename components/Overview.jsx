@@ -1,8 +1,31 @@
 import Buttons from "./Buttons";
 import Support from "./Support";
 import TopPodcastCard from "./Top-Podcast-Card";
+import { useState, useEffect } from "react";
 
 export default function Overview(params) {
+  const [className, setClassName] = useState(
+    "d-flex align-items-center justify-content-between mx-auto w-100 pic3 mt-3 shadow me-0"
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width <= 768) {
+        setClassName(
+          "d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded-left mt-3 shadow me-0"
+        );
+      } else {
+        setClassName(
+          "d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded mt-3 shadow me-0"
+        );
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const topPodcasts = [
     { link: "2Ghp894n1laIf2w98VeAOJ" },
     { link: "7MXVkk9YMctZqd1Srtv4MB" },
@@ -12,7 +35,7 @@ export default function Overview(params) {
   ];
   return (
     <>
-      <div className="container my-3 my-lg-4">
+      <div className="container my-4">
         <div className="row display-1 text-poppins text-uppercase">
           <div className="col-sm">listen</div>
           <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 shadow"></div>
@@ -52,10 +75,7 @@ export default function Overview(params) {
               </ul>
             </div>
           </div>
-          <div
-            className="d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded-left mt-3 shadow"
-            style={{ width: "auto", height: 400 }}
-          ></div>
+          <div className={className} style={{ height: 400 }}></div>
         </div>
       </div>
     </>

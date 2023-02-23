@@ -1,12 +1,12 @@
 body {
   color: #fff;
-  background: radial-gradient(circle at top left, #180a0a, #000);
+  background: radial-gradient(circle at top left, #110000, #000);
 }
 .bg-red {
-  background-color: #180a0a;
+  background: radial-gradient(circle at top, #110000, #000);
 }
 .bg-grad {
-  background: linear-gradient(to top right, #180a0a 0%, #000 100%);
+  background: linear-gradient(to top right, #110000 0%, #000 100%);
 }
 .fs-7,
 .nav-link,
@@ -65,7 +65,7 @@ input {
   border-bottom-left-radius: 50px;
 }
 .rounded {
-  border-radius: 10px !important;
+  border-radius: 50px !important;
 }
 a {
   text-decoration: none;
