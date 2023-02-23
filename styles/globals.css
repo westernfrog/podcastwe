@@ -41,11 +41,11 @@ input {
   box-shadow: none !important;
 }
 .rounded-up {
-  border-top-right-radius: 50px !important;
-  border-top-left-radius: 50px !important;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 .rounded {
-  border-radius: 50px !important;
+  border-radius: 10px !important;
 }
 a {
   text-decoration: none;
@@ -61,7 +61,13 @@ a {
   background-position: 5%;
 }
 .pic3 {
-  background-image: url("../public/image2.jpg");
+  background: radial-gradient(
+      circle at top left,
+      #ffffff10 0%,
+      #00000070 50%,
+      #ffffff00 100%
+    ),
+    url("../public/image2.jpg");
   background-size: cover;
   background-position: 5%;
 }

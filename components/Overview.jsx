@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Footer from "./Footer";
 import Support from "./Support";
 import TopPodcastCard from "./Top-Podcast-Card";
 
@@ -48,13 +49,13 @@ export default function Overview(params) {
             className="container-fluid col-md-6 my-5 my-lg-0 text-center overflow-auto"
             style={{ maxHeight: "230px" }}
           >
-            <h1 className="fs-5 text-md-start">Top Podcast of the week</h1>
+            <h1 className="fs-5 text-md-start mb-3">Top Podcast of the week</h1>
             <div className="text-md-start">
               <ul className="list-group list-group-flush">
                 {topPodcasts.map((podcast, index) => (
                   <li
                     key={index}
-                    className="list-group-item bg-transparent text-white px-0 py-1"
+                    className="list-group-item bg-transparent text-white p-0"
                   >
                     <TopPodcastCard link={podcast.link} />
                   </li>
@@ -63,7 +64,7 @@ export default function Overview(params) {
             </div>
           </div>
           <div
-            className="d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded-up mt-3"
+            className="d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded-up mt-3 shadow"
             style={{ width: "auto", height: 400 }}
           ></div>
         </div>
