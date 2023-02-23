@@ -12,7 +12,7 @@ export default function News(params) {
           <div className="col-md-6">
             <p className="mb-0 fs-6 text-muted">
               Stay up-to-date with the latest and most significant headlines of
-              the week on our 'Best News of This Week' page, offering
+              the week on our &apos;Best News of This Week&apos; page, offering
               comprehensive coverage and insightful analysis of the top stories
               from around the world.
             </p>
