@@ -1,7 +1,7 @@
-export default function NewsCard(props) {
+export default function PodCastCard(props) {
   return (
     <>
-      <div className={props.class}>
+      <div className={`col-md-${props.col}`}>
         <div className="card card-cover btn-shrink h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg image bg-grad">
           <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-3">
             <h2 className="pt-5 mt-auto mb-2 lh-1 fw-bold">{props.title}</h2>

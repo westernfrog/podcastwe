@@ -54,7 +54,7 @@ export default function Overview(params) {
               provide high-quality content that informs, educates, and inspires
               our readers.
             </p>
-            <Buttons url="contact" html="Get Started" />
+            <Buttons url="contact" html="Contact us" />
             <Support />
           </div>
           <div

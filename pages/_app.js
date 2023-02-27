@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import "@/styles/globals.css";
 import Script from "next/script";
 import Head from "next/head";
+import Footer from "@/components/Footer";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -29,7 +30,9 @@ export default function App({ Component, pageProps }) {
         src="https://kit.fontawesome.com/5818d7bece.js"
         crossorigin="anonymous"
       ></Script>
+
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

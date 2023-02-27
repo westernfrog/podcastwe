@@ -1,19 +1,19 @@
 import Buttons from "./Buttons";
 import PodCastCard from "./PodCastCard";
-import news from "../data/news.json";
+import editorpick from "../data/editorpick.json";
 
-export default function News(params) {
+export default function EditorPick(params) {
   return (
     <>
       <div className="container my-5 py-5">
-        <div className="row d-flex align-items-center justify-content-between">
+        <div className="row d-flex align-items-top justify-content-between">
           <div className="col-md-6">
-            <h1 className="display-2 text-uppercase">best news of this week</h1>
+            <h1 className="display-2 text-uppercase">Editor's Pick</h1>
           </div>
           <div className="col-md-6">
             <p className="mb-0 fs-6 text-muted">
               Stay up-to-date with the latest and most significant headlines of
-              the week on our &apos;Best News of This Week&apos; page, offering
+              the week on our &apos;Editor's Pick&apos; page, offering
               comprehensive coverage and insightful analysis of the top stories
               from around the world.
             </p>
@@ -21,12 +21,12 @@ export default function News(params) {
           </div>
         </div>
         <div class="row align-items-stretch g-4 py-5">
-          {news.map((news) => (
+          {editorpick.map((editorpick) => (
             <PodCastCard
-              key={news.id}
-              col={news.size}
-              title={news.title}
-              desc={news.desc}
+              key={editorpick.id}
+              col={4}
+              title={editorpick.title}
+              desc={editorpick.desc}
             />
           ))}
         </div>
