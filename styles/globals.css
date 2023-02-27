@@ -91,6 +91,9 @@ a {
   background-size: cover;
   background-position: 5%;
 }
+.image {
+  background-image: url("../public/image3.jpg");
+}
 .btn-shrink:active {
   transform: scale(0.97);
   transition: transform 100ms ease-in-out;
@@ -117,4 +120,25 @@ a {
   background-color: #ecf2ff;
   border: none;
   border-radius: 10px;
+}
+
+.rounded-4 {
+  border-radius: 0.5rem;
+}
+.rounded-5 {
+  border-radius: 1rem;
+}
+.text-shadow-1 {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+.text-shadow-2 {
+  text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+.text-shadow-3 {
+  text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }

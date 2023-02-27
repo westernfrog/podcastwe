@@ -1,6 +1,6 @@
 import Buttons from "./Buttons";
 import Support from "./Support";
-import TopPodcastCard from "./Top-Podcast-Card";
+import TopPodcastCard from "./TopPodcastCard";
 import { useState, useEffect } from "react";
 
 export default function Overview(params) {
@@ -59,20 +59,17 @@ export default function Overview(params) {
           </div>
           <div
             className="container-fluid col-md-6 my-5 my-lg-0 text-center overflow-auto"
-            style={{ maxHeight: "230px" }}
+            style={{ maxHeight: "235px" }}
           >
             <h1 className="fs-5 text-md-start mb-4">Top Podcast of the week</h1>
             <div className="text-md-start">
-              <ul className="list-group list-group-flush">
+              <div className="row-cols-1">
                 {topPodcasts.map((podcast, index) => (
-                  <li
-                    key={index}
-                    className="list-group-item bg-transparent text-white p-0"
-                  >
+                  <div key={index} className="col pe-0 pe-lg-5">
                     <TopPodcastCard link={podcast.link} />
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
           <div className={className} style={{ height: 400 }}></div>
