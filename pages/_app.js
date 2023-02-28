@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import Script from "next/script";
 import Head from "next/head";
 import Footer from "@/components/Footer";
+import { NextUIProvider } from "@nextui-org/react";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -31,7 +32,9 @@ export default function App({ Component, pageProps }) {
         crossorigin="anonymous"
       ></Script>
 
-      <Component {...pageProps} />
+      <NextUIProvider>
+        <Component {...pageProps} />
+      </NextUIProvider>
       <Footer />
     </>
   );

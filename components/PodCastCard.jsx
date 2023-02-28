@@ -1,18 +1,57 @@
+import { Card, Col, Grid, Text } from "@nextui-org/react";
+
 export default function PodCastCard(props) {
   return (
     <>
-      <div className={`col-md-${props.col}`}>
-        <div className="card card-cover btn-shrink h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg image border-0 bg-grad">
-          <div className="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-3">
-            <h2 className="pt-5 mt-auto mb-2 lh-1 fw-bold">{props.title}</h2>
-            <ul className="d-flex list-unstyled">
-              <li className="d-flex align-items-center me-3 text-muted">
-                <p>{props.desc}</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <Grid sm={12} md={props.col}>
+        <Card
+          isPressable
+          css={{ w: "100%", h: "400px" }}
+          style={{ backgroundColor: "inherit" }}
+        >
+          <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
+            <Col>
+              <Text
+                size={12}
+                weight="bold"
+                transform="uppercase"
+                color="#9E9E9E"
+              >
+                New
+              </Text>
+              <Text h3 color="white">
+                {props.title}
+              </Text>
+            </Col>
+          </Card.Header>
+          <Card.Body css={{ p: 0 }}>
+            <Card.Image
+              src="https://nextui.org/images/card-example-3.jpeg"
+              objectFit="cover"
+              width="100%"
+              height="100%"
+              alt="Relaxing app background"
+            />
+          </Card.Body>
+          <Card.Footer
+            isBlurred
+            css={{
+              position: "absolute",
+              bgBlur: "#0f111466",
+              borderTop: "$borderWeights$light solid $gray800",
+              bottom: 0,
+              zIndex: 1,
+              border: 0,
+            }}
+          >
+            <Col>
+              <Text color="#d1d1d1" size={14}>
+                {props.desc}
+              </Text>
+            </Col>
+          </Card.Footer>
+        </Card>
+      </Grid>
     </>
   );
 }
