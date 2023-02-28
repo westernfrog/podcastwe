@@ -14,7 +14,7 @@ export default function TermsConditions(params) {
             <p className="fs-2 mb-4">
               This page explains our terms of service, which contain important
               information about your legal rights. When you use podcastwe.com,
-              you're agreeing to these terms.
+              you&apos;re agreeing to these terms.
             </p>
             <ul className="lh-lg text-dm">
               <li className="fs-4 fw-bold" id="1">
