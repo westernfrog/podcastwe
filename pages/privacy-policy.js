@@ -8,8 +8,9 @@ export default function PrivacyPolicy(params) {
           <h1 className="display-3">Privacy Policy</h1>
           <p>Last updated Feb 27th, 2023</p>
         </div>
-        <div className="row flex-row-reverse align-items-stretch mt-5 pt-5">
-          <div className="col-md-7 order-last">
+
+        <div class="row flex-row-reverse my-4 py-5">
+          <div class="col-md-7 order-last">
             <p className="fs-2 mb-4">
               This Privacy Policy explains how we collect, use, and share
               personal information that we obtain from visitors to our podcast
@@ -72,9 +73,9 @@ export default function PrivacyPolicy(params) {
               </p>
             </ul>
           </div>
-          <div className="col-1"></div>
-          <div className="col-md-4 order-first mb-5">
-            <div className="">
+          <div className="col-md-1"></div>
+          <div class="col-md-4 order-first">
+            <div class="position-sticky" style={{ top: "5rem" }}>
               <p className="fs-2 mb-4">Table of Contents</p>
               <ul className="text-dm fs-5 lh-lg link-light">
                 <li>
