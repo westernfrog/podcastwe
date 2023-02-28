@@ -59,7 +59,7 @@ export default function Overview(params) {
           </div>
           <div
             className="container-fluid col-md-6 my-5 my-lg-0 text-center overflow-auto"
-            style={{ maxHeight: "235px" }}
+            style={{ maxHeight: "300px" }}
           >
             <h1 className="fs-5 text-md-start mb-4">Top Podcast of the week</h1>
             <div className="text-md-start">
@@ -72,7 +72,10 @@ export default function Overview(params) {
               </div>
             </div>
           </div>
-          <div className={className} style={{ height: 400 }}></div>
+          <div
+            className={`${className} mb-5 pb-5`}
+            style={{ height: 400 }}
+          ></div>
         </div>
       </div>
     </>

@@ -9,14 +9,14 @@ export default function TermsConditions(params) {
           <p>Last updated Feb 27th, 2023</p>
         </div>
 
-        <div class="row flex-row-reverse my-4 py-5">
+        <div class="row my-4 py-5">
           <div class="col-md-7 order-last">
             <p className="fs-2 mb-4">
               This page explains our terms of service, which contain important
               information about your legal rights. When you use podcastwe.com,
               you&apos;re agreeing to these terms.
             </p>
-            <ul className="lh-lg text-dm">
+            <ul className="lh-lg text-dm text-light">
               <li className="fs-4 fw-bold" id="1">
                 Intellectual Property
               </li>
@@ -62,7 +62,7 @@ export default function TermsConditions(params) {
                 or your violation of these terms and conditions.
               </p>
               <li className="fs-4 fw-bold" id="5">
-                Changes of these Terms
+                Changes of These Terms
               </li>
               <p className="fs-6">
                 We may update these terms and conditions from time to time. We
@@ -119,7 +119,7 @@ export default function TermsConditions(params) {
                 </li>
                 <li>
                   <Link className="link-light" href="#5">
-                    Changes of these Terms
+                    Changes of These Terms
                   </Link>
                 </li>
                 <li>

@@ -9,7 +9,7 @@ export default function PrivacyPolicy(params) {
           <p>Last updated Feb 27th, 2023</p>
         </div>
 
-        <div class="row flex-row-reverse my-4 py-5">
+        <div class="row my-4 py-5">
           <div class="col-md-7 order-last">
             <p className="fs-2 mb-4">
               This Privacy Policy explains how we collect, use, and share

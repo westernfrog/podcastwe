@@ -1,12 +1,25 @@
 import { Card, Col, Grid, Text } from "@nextui-org/react";
+import { useState } from "react";
 
 export default function PodCastCard(props) {
+  const [showDiv, setShowDiv] = useState(false);
+
+  const handleHover = () => {
+    setShowDiv(true);
+  };
+
+  const handleLeave = () => {
+    setShowDiv(false);
+  };
+
   return (
     <>
       <Grid sm={12} md={props.col}>
         <Card
+          onMouseEnter={handleHover}
+          onMouseLeave={handleLeave}
           isPressable
-          css={{ w: "100%", h: "400px" }}
+          css={{ w: "100%", h: "300px" }}
           style={{ backgroundColor: "inherit" }}
         >
           <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
@@ -34,6 +47,7 @@ export default function PodCastCard(props) {
             />
           </Card.Body>
           <Card.Footer
+            className={`my-div ${showDiv ? "d-block" : "d-lg-none"}`}
             isBlurred
             css={{
               position: "absolute",
