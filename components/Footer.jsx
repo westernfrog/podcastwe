@@ -26,7 +26,7 @@ export default function Footer(params) {
 
           <div className="col my-5 my-lg-0">
             <h6>Navigation</h6>
-            <ul className="nav flex-column">
+            <ul className="nav flex-column mx-0">
               <li className="nav-item mb-2">
                 <Link href="/" className="nav-link p-0 text-muted mx-0">
                   Home
@@ -52,7 +52,7 @@ export default function Footer(params) {
 
           <div className="col my-5 my-lg-0">
             <h6>Company</h6>
-            <ul className="nav flex-column">
+            <ul className="nav flex-column mx-0">
               <li className="nav-item mb-2">
                 <Link href="about" className="nav-link p-0 text-muted mx-0">
                   About us
