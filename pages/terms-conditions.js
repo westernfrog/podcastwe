@@ -84,7 +84,6 @@ export default function TermsConditions(params) {
               <p className="fs-6">
                 If you have any questions or concerns about these terms and
                 conditions, please contact us at [insert contact information].
-                Regenerate response
               </p>
             </ul>
           </div>
