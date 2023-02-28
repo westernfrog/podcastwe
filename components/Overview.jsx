@@ -54,12 +54,12 @@ export default function Overview(params) {
               provide high-quality content that informs, educates, and inspires
               our readers.
             </p>
-            <Buttons url="contact" html="Contact us" />
+            {/* <Buttons url="contact" html="Contact us" /> */}
             <Support />
           </div>
           <div
             className="container-fluid col-md-6 my-5 my-lg-0 text-center overflow-auto"
-            style={{ maxHeight: "300px" }}
+            style={{ maxHeight: "235px" }}
           >
             <h1 className="fs-5 text-md-start mb-4">Top Podcast of the week</h1>
             <div className="text-md-start">

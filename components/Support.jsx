@@ -1,7 +1,7 @@
 export default function Support(params) {
   return (
     <>
-      <div className="col-sm my-4 text-center">
+      <div className="col-sm my-5 text-center">
         <h1 className="fs-5 text-md-start">Support by</h1>
         <div className="row my-3 g-3 text-center mx-auto text-md-start">
           <div className="col">

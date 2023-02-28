@@ -49,8 +49,8 @@ export default function Header(params) {
                     { href: "/blog", label: "Blog" },
                     { href: "/news", label: "News" },
                     { href: "/trending", label: "Trending" },
-                    { href: "/events", label: "Events" },
                     { href: "/about", label: "About Us" },
+                    { href: "/contact", label: "Contact" },
                   ].map(({ href, label }, index) => (
                     <li className="nav-item" key={index}>
                       <Link className="nav-link fs-5 fw-bold my-2" href={href}>
@@ -71,8 +71,8 @@ export default function Header(params) {
                   { href: "/blog", label: "Blog" },
                   { href: "/news", label: "News" },
                   { href: "/trending", label: "Trending" },
-                  { href: "/events", label: "Events" },
                   { href: "/about", label: "About Us" },
+                  { href: "/contact", label: "Contact" },
                 ].map(({ href, label }, index) => (
                   <li className="nav-item" key={index}>
                     <Link className="nav-link" href={href}>
