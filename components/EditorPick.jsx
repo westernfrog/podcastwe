@@ -8,12 +8,12 @@ export default function EditorPick(params) {
       <div className="container my-5 py-5">
         <div className="row d-flex align-items-top justify-content-between">
           <div className="col-md-6">
-            <h1 className="display-2 text-uppercase">Editor's Pick</h1>
+            <h1 className="display-2 text-uppercase">Editor&apos;s Pick</h1>
           </div>
           <div className="col-md-6">
             <p className="mb-0 fs-6 text-muted">
               Stay up-to-date with the latest and most significant headlines of
-              the week on our &apos;Editor's Pick&apos; page, offering
+              the week on our &apos;Editor&apos;s Pick&apos; page, offering
               comprehensive coverage and insightful analysis of the top stories
               from around the world.
             </p>
