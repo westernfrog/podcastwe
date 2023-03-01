@@ -72,6 +72,7 @@ export default function Footer(params) {
                 <p
                   className="nav-link p-0 text-muted mx-0"
                   onClick={() => setPrivacy(true)}
+                  style={{ cursor: "pointer" }}
                 >
                   Privacy Policy
                 </p>
@@ -174,7 +175,7 @@ export default function Footer(params) {
                     >
                       Close
                     </Button>
-                    <Button auto onClick={() => setPrivacy(false)}>
+                    <Button shadow auto onClick={() => setPrivacy(false)}>
                       Agree
                     </Button>
                   </Modal.Footer>
@@ -184,6 +185,7 @@ export default function Footer(params) {
                 <p
                   className="nav-link p-0 text-muted mx-0"
                   onClick={() => setTerms(true)}
+                  style={{ cursor: "pointer" }}
                 >
                   Terms & Conditions
                 </p>
@@ -299,7 +301,7 @@ export default function Footer(params) {
                     >
                       Close
                     </Button>
-                    <Button auto onClick={() => setTerms(false)}>
+                    <Button shadow auto onClick={() => setTerms(false)}>
                       Agree
                     </Button>
                   </Modal.Footer>

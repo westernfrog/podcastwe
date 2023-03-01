@@ -14,7 +14,7 @@ export default function PodCastCard(props) {
 
   return (
     <>
-      <Grid sm={12} md={props.col} className="g-4">
+      <Grid sm={6} md={props.col} className="g-4">
         <Card
           onMouseEnter={handleHover}
           onMouseLeave={handleLeave}
@@ -39,7 +39,7 @@ export default function PodCastCard(props) {
           </Card.Header>
           <Card.Body css={{ p: 0 }}>
             <Card.Image
-              src="https://nextui.org/images/card-example-3.jpeg"
+              src="https://nextui.org/images/card-example-2.jpeg"
               objectFit="cover"
               width="100%"
               height="100%"
@@ -47,7 +47,7 @@ export default function PodCastCard(props) {
             />
           </Card.Body>
           <Card.Footer
-            className={`my-div ${showDiv ? "d-block" : "d-lg-none"}`}
+            className={`${showDiv ? "d-block" : "d-lg-none"}`}
             isBlurred
             css={{
               position: "absolute",
