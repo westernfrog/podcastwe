@@ -14,7 +14,7 @@ export default function PodCastCard(props) {
 
   return (
     <>
-      <Grid sm={12} md={props.col}>
+      <Grid sm={12} md={props.col} className="g-4">
         <Card
           onMouseEnter={handleHover}
           onMouseLeave={handleLeave}
