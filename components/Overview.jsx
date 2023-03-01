@@ -65,7 +65,7 @@ export default function Overview(params) {
             <div className="text-md-start">
               <div className="row-cols-1">
                 {topPodcasts.map((podcast, index) => (
-                  <div key={index} className="col pe-0 pe-lg-5">
+                  <div key={index} className="col pe-0 pe-lg-5 bg-grad">
                     <TopPodcastCard link={podcast.link} />
                   </div>
                 ))}
