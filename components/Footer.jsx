@@ -8,7 +8,7 @@ export default function Footer(params) {
 
   return (
     <>
-      <div className="container border-top">
+      <div className="container">
         <footer className="row py-5">
           <div className="col-md-4">
             <Link
