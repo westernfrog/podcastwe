@@ -31,11 +31,9 @@ export default function App({ Component, pageProps }) {
         src="https://kit.fontawesome.com/5818d7bece.js"
         crossorigin="anonymous"
       ></Script>
-
       <NextUIProvider>
         <Component {...pageProps} />
       </NextUIProvider>
-
       <Footer />
     </>
   );

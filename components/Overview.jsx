@@ -1,7 +1,7 @@
 import Support from "./Support";
 import TopPodcastCard from "./TopPodcastCard";
 import { useState, useEffect } from "react";
-import { Spacer, Text } from "@nextui-org/react";
+import { Spacer } from "@nextui-org/react";
 
 export default function Overview(params) {
   const [className, setClassName] = useState(

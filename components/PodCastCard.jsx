@@ -13,7 +13,7 @@ export default function PodCastCard(props) {
   };
   useEffect(() => {
     const defaultApi =
-      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=og3JYOJYnvJPmKmj5DzEGhh7BS0_8e_hYaUjUCTJLcc";
+      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=-EhqJf2oW_B3R3y6lBW70uTolREUZTDKKLooDkyZa5U";
     apiJson(defaultApi);
 
     async function apiJson(defaults) {
