@@ -1,10 +1,11 @@
 import Support from "./Support";
 import TopPodcastCard from "./TopPodcastCard";
 import { useState, useEffect } from "react";
+import { Spacer, Text } from "@nextui-org/react";
 
 export default function Overview(params) {
   const [className, setClassName] = useState(
-    "d-flex align-items-center justify-content-between mx-auto w-100 pic3 mt-3 shadow me-0"
+    "d-flex align-items-center w-100 pic3 shadow"
   );
 
   useEffect(() => {
@@ -12,12 +13,10 @@ export default function Overview(params) {
       const width = window.innerWidth;
       if (width <= 768) {
         setClassName(
-          "d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded-left mt-3 shadow me-0"
+          "d-flex align-items-center w-100 pic3 rounded-left shadow"
         );
       } else {
-        setClassName(
-          "d-flex align-items-center justify-content-between mx-auto w-100 pic3 rounded mt-3 shadow me-0"
-        );
+        setClassName("d-flex align-items-center w-100 pic3 rounded shadow");
       }
     };
     window.addEventListener("resize", handleResize);
@@ -35,7 +34,7 @@ export default function Overview(params) {
   return (
     <>
       <div className="container my-4">
-        <div className="row display-1 text-poppins text-uppercase">
+        <div className="row display-1 text-poppins text-uppercase text-shadow-2">
           <div className="col-sm">listen</div>
           <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 shadow"></div>
           <div className="col-sm">new</div>
@@ -61,7 +60,7 @@ export default function Overview(params) {
             style={{ maxHeight: "235px" }}
           >
             <h1 className="fs-5 text-md-start mb-4">Top Podcast of the week</h1>
-            <div className="text-md-start">
+            <div className="text-md-start ">
               <div className="row-cols-1">
                 {topPodcasts.map((podcast, index) => (
                   <div key={index} className="col pe-0 pe-lg-5 bg-grad">
@@ -71,8 +70,9 @@ export default function Overview(params) {
               </div>
             </div>
           </div>
+          <Spacer y={3} x={0} />
           <div
-            className={`${className} mb-5 pb-5`}
+            className={`${className} my-5 py-5`}
             style={{ height: 400 }}
           ></div>
         </div>

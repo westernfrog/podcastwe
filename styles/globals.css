@@ -1,7 +1,9 @@
 body {
   color: #fff;
   background: radial-gradient(circle at top left, #110000, #000);
+  overflow-x: hidden;
 }
+
 .bg-red {
   background: radial-gradient(circle at top, #110000, #000);
 }
@@ -65,7 +67,7 @@ a {
   background-position: 5%;
 }
 .image {
-  background-image: url("../public/image3.jpg");
+  background-image: url("https://source.unsplash.com/random/1920x1280");
 }
 .btn-shrink:active {
   transform: scale(0.97);
@@ -105,10 +107,10 @@ a {
   text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 .text-shadow-2 {
-  text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+  text-shadow: 3px 3px 9px #000;
 }
 .text-shadow-3 {
-  text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 .card-cover {
   background-repeat: no-repeat;

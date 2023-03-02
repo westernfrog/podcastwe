@@ -1,5 +1,5 @@
 import { Card, Col, Grid, Text } from "@nextui-org/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function PodCastCard(props) {
   const [showDiv, setShowDiv] = useState(false);
@@ -11,6 +11,22 @@ export default function PodCastCard(props) {
   const handleLeave = () => {
     setShowDiv(false);
   };
+  useEffect(() => {
+    const defaultApi =
+      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=og3JYOJYnvJPmKmj5DzEGhh7BS0_8e_hYaUjUCTJLcc";
+    apiJson(defaultApi);
+
+    async function apiJson(defaults) {
+      const apiUrlData = await fetch(defaults);
+      const apiData = await apiUrlData.json();
+      showDefault(apiData);
+    }
+    function showDefault(Photo) {
+      setUrl(Photo.urls.full);
+    }
+  }, []);
+
+  const [url, setUrl] = useState("");
 
   return (
     <>
@@ -32,17 +48,18 @@ export default function PodCastCard(props) {
               >
                 New
               </Text>
-              <Text h3 color="white">
+              <Text h3 color="white" className="text-shadow-3">
                 {props.title}
               </Text>
             </Col>
           </Card.Header>
           <Card.Body css={{ p: 0 }}>
             <Card.Image
-              src="https://nextui.org/images/card-example-2.jpeg"
+              src={url}
               objectFit="cover"
               width="100%"
               height="100%"
+              loading="lazy"
               alt="Relaxing app background"
             />
           </Card.Body>
