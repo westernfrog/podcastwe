@@ -5,7 +5,7 @@ export default function Header(params) {
     <>
       <div className="sticky-top bg-nav">
         <nav className="container navbar navbar-expand-lg navbar-dark">
-          <div className="container-fluid py-2 px-0">
+          <div className="container-fluid py-1 px-0">
             <Link className="navbar-brand text-poppins text-uppercase" href="/">
               PodcastWe
             </Link>

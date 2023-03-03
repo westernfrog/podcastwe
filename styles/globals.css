@@ -15,6 +15,7 @@ body {
 
 @media (max-width: 992px) {
   .bg-nav {
+    background: radial-gradient(circle at top left, #111, #111);
     backdrop-filter: none;
   }
 }
