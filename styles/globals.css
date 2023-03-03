@@ -1,15 +1,24 @@
 body {
   color: #fff;
-  background: radial-gradient(circle at top left, #100000, #000);
+  background: radial-gradient(circle at top left, #111, #000);
   overflow-x: hidden;
 }
 
-.bg-red {
-  background: radial-gradient(circle at top, #100000, #000000);
+.bg-grey {
+  background: radial-gradient(circle at top, #111, #000000);
 }
-.bg-grad {
-  background: linear-gradient(to top right, #100000 0%, #000000 100%);
+.bg-nav {
+  background: linear-gradient(to top right, #00000010 0%, #00000060 100%);
+  backdrop-filter: saturate(180%) blur(20px);
+  box-shadow: rgb(2 1 1 / 10%) 0px 5px 20px -5px;
 }
+
+@media (max-width: 992px) {
+  .bg-nav {
+    backdrop-filter: none;
+  }
+}
+
 .fs-7,
 .nav-link,
 p {
@@ -66,8 +75,22 @@ a {
   background-size: cover;
   background-position: center;
 }
+.pic4 {
+  background: url("../public/image4.jpg");
+  background-size: cover;
+  background-position: center;
+}
 .image {
-  background-image: url("https://source.unsplash.com/random/?query=podcast/1920x1280");
+  background-image: url("https://source.unsplash.com/random");
+}
+.image1 {
+  background-image: url("https://source.unsplash.com/random");
+}
+.image2 {
+  background-image: url("https://source.unsplash.com/random");
+}
+.image3 {
+  background-image: url("https://source.unsplash.com/random");
 }
 .btn-shrink:active {
   transform: scale(0.97);

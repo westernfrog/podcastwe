@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Header(params) {
   return (
     <>
-      <div className="sticky-top bg-grad">
+      <div className="sticky-top bg-nav">
         <nav className="container navbar navbar-expand-lg navbar-dark">
           <div className="container-fluid py-2 px-0">
             <Link className="navbar-brand text-poppins text-uppercase" href="/">
@@ -21,11 +21,13 @@ export default function Header(params) {
             </button>
 
             <div
-              className="offcanvas offcanvas-start bg-red d-lg-none py-1"
+              className="offcanvas offcanvas-start bg-grey d-lg-none py-1"
               tabIndex="-1"
               id="offcanvasExample"
               aria-labelledby="offcanvasExampleLabel"
-              style={{ maxWidth: "270px" }}
+              style={{
+                maxWidth: "270px",
+              }}
             >
               <div className="offcanvas-header">
                 <h5
@@ -44,7 +46,7 @@ export default function Header(params) {
                   <i className="fa-solid fa-xmark text-light"></i>
                 </button>
               </div>
-              <div className="offcanvas-body">
+              <div className="offcanvas-body bg-grey">
                 <ul className="navbar-nav mb-2 mb-lg-0 ms-auto">
                   {[
                     { href: "/", label: "Home" },

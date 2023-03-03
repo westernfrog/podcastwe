@@ -14,10 +14,10 @@ export default function PodCastCard(props) {
 
   async function getRandomPodcastPhoto() {
     const defaultApi =
-      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=-EhqJf2oW_B3R3y6lBW70uTolREUZTDKKLooDkyZa5U";
+      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=og3JYOJYnvJPmKmj5DzEGhh7BS0_8e_hYaUjUCTJLcc";
     const apiUrlData = await fetch(defaultApi);
     const apiData = await apiUrlData.json();
-    const photoUrl = apiData.urls.small;
+    const photoUrl = apiData.urls.regular;
     return photoUrl;
   }
   const [photoUrl, setPhotoUrl] = useState(null);
@@ -35,11 +35,28 @@ export default function PodCastCard(props) {
     return (
       <Grid sm={6} md={props.col} className="g-4">
         <Card
+          onMouseEnter={handleHover}
+          onMouseLeave={handleLeave}
           isPressable
           css={{ h: "300px" }}
           style={{ backgroundColor: "#ffffff20" }}
         >
-          <Card.Body>
+          <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
+            <Col>
+              <Text
+                size={12}
+                weight="bold"
+                transform="uppercase"
+                color="#9E9E9E"
+              >
+                New
+              </Text>
+              <Text h3 color="white" className="text-shadow-3">
+                {props.title}
+              </Text>
+            </Col>
+          </Card.Header>
+          <Card.Body css={{ p: 0 }}>
             <Loading
               className="my-auto"
               type="points-opacity"
@@ -47,6 +64,24 @@ export default function PodCastCard(props) {
               size="xl"
             />
           </Card.Body>
+          <Card.Footer
+            className={`${showDesc ? "d-block" : "d-lg-none"}`}
+            isBlurred
+            css={{
+              position: "absolute",
+              bgBlur: "#0f111466",
+              borderTop: "$borderWeights$light solid $gray800",
+              bottom: 0,
+              zIndex: 1,
+              border: 0,
+            }}
+          >
+            <Col>
+              <Text color="#d1d1d1" size={14}>
+                {props.desc}
+              </Text>
+            </Col>
+          </Card.Footer>
         </Card>
       </Grid>
     );

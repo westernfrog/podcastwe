@@ -3,6 +3,9 @@ import TopPodcastCard from "./TopPodcastCard";
 import { useState, useEffect } from "react";
 import { Spacer } from "@nextui-org/react";
 import Image from "next/image";
+import image1 from "../public/image1.jpg";
+import image2 from "../public/image2.jpg";
+import image3 from "../public/image3.jpg";
 
 export default function Overview(params) {
   const [className, setClassName] = useState(
@@ -40,7 +43,7 @@ export default function Overview(params) {
             <span className="align-middle">Listen</span>
             <div className="media align-items-center d-none">
               <Image
-                src="/public/image1.jpg"
+                src={image1}
                 className="mr-3 col-4"
                 alt="pic1"
                 width={500}
@@ -54,7 +57,7 @@ export default function Overview(params) {
             <span className="align-middle">New</span>
             <div className="media align-items-center d-none">
               <Image
-                src="/public/image2.jpg"
+                src={image2}
                 className="mr-3 col-4"
                 alt="pic2"
                 width={500}
@@ -68,7 +71,7 @@ export default function Overview(params) {
             <span className="align-middle">Podcast</span>
             <div className="media align-items-center d-none">
               <Image
-                src="/public/image3.jpg"
+                src={image3}
                 className="mr-3 col-4"
                 alt="pic3"
                 width={500}
@@ -93,12 +96,21 @@ export default function Overview(params) {
             </p>
             <Support />
           </div>
-          <div
-            className="container-fluid col-md-6 my-5 my-lg-0 text-center overflow-auto"
-            style={{ maxHeight: "235px" }}
-          >
-            <h1 className="fs-5 text-md-start mb-4">Top Podcast of the week</h1>
-            <div className="text-md-start ">
+          <div className="container-fluid col-md-6 my-5 my-lg-0 text-center">
+            <h1
+              className="fs-5 text-md-start mb-4"
+              style={{
+                position: "sticky",
+                top: "0",
+                zIndex: "1",
+              }}
+            >
+              Top Podcast of the week
+            </h1>
+            <div
+              className="text-md-start overflow-auto pe-3"
+              style={{ maxHeight: "190px" }}
+            >
               <div className="row-cols-1">
                 {topPodcasts.map((podcast, index) => (
                   <div key={index} className="col pe-0 pe-lg-5 bg-inherit">
@@ -108,6 +120,7 @@ export default function Overview(params) {
               </div>
             </div>
           </div>
+
           <Spacer y={3} x={0} />
           <div
             className={`${className} my-5 py-5`}
