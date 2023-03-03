@@ -15,6 +15,7 @@ export default function Header(params) {
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasExample"
               aria-controls="offcanvasExample"
+              style={{ boxShadow: "none" }}
             >
               <i className="fa-solid fa-bars"></i>
             </button>
@@ -38,6 +39,7 @@ export default function Header(params) {
                   type="button"
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
+                  style={{ boxShadow: "none" }}
                 >
                   <i className="fa-solid fa-xmark text-light"></i>
                 </button>

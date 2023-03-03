@@ -2,18 +2,18 @@ import { Card, Col, Grid, Text } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 
 export default function PodCastCard(props) {
-  const [showDiv, setShowDiv] = useState(false);
+  const [showDesc, setShowDesc] = useState(false);
 
   const handleHover = () => {
-    setShowDiv(true);
+    setShowDesc(true);
   };
 
   const handleLeave = () => {
-    setShowDiv(false);
+    setShowDesc(false);
   };
   useEffect(() => {
     const defaultApi =
-      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=-EhqJf2oW_B3R3y6lBW70uTolREUZTDKKLooDkyZa5U";
+      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=og3JYOJYnvJPmKmj5DzEGhh7BS0_8e_hYaUjUCTJLcc";
     apiJson(defaultApi);
 
     async function apiJson(defaults) {
@@ -59,11 +59,11 @@ export default function PodCastCard(props) {
               objectFit="cover"
               width="100%"
               height="100%"
-              alt="Relaxing app background"
+              alt="Podcast app background"
             />
           </Card.Body>
           <Card.Footer
-            className={`${showDiv ? "d-block" : "d-lg-none"}`}
+            className={`${showDesc ? "d-block" : "d-lg-none"}`}
             isBlurred
             css={{
               position: "absolute",
