@@ -23,7 +23,7 @@ export default function Newsletter() {
   return (
     <div className="container text-dm my-5 pb-5 text-light">
       <div
-        className="card rounded-5 p-3 p-lg-5 border-0 shadow"
+        className="card rounded-5 p-3 p-lg-5 border-0 shadow image"
         style={{ backgroundColor: "#111" }}
       >
         <div className="card-body">

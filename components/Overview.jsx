@@ -2,6 +2,7 @@ import Support from "./Support";
 import TopPodcastCard from "./TopPodcastCard";
 import { useState, useEffect } from "react";
 import { Spacer } from "@nextui-org/react";
+import Image from "next/image";
 
 export default function Overview(params) {
   const [className, setClassName] = useState(
@@ -38,10 +39,13 @@ export default function Overview(params) {
           <div className="col-sm">
             <span className="align-middle">Listen</span>
             <div className="media align-items-center d-none">
-              <img
-                src="../public/image1.jpg"
+              <Image
+                src="/public/image1.jpg"
                 className="mr-3 col-4"
                 alt="pic1"
+                width={500}
+                height={500}
+                onError={() => <div>Loading...</div>}
               />
             </div>
           </div>
@@ -49,10 +53,13 @@ export default function Overview(params) {
           <div className="col-sm">
             <span className="align-middle">New</span>
             <div className="media align-items-center d-none">
-              <img
-                src="../public/image2.jpg"
+              <Image
+                src="/public/image2.jpg"
                 className="mr-3 col-4"
                 alt="pic2"
+                width={500}
+                height={500}
+                onError={() => <div>Loading...</div>}
               />
             </div>
           </div>
@@ -60,10 +67,13 @@ export default function Overview(params) {
           <div className="col-sm">
             <span className="align-middle">Podcast</span>
             <div className="media align-items-center d-none">
-              <img
-                src="../public/image3.jpg"
+              <Image
+                src="/public/image3.jpg"
                 className="mr-3 col-4"
                 alt="pic3"
+                width={500}
+                height={500}
+                onError={() => <div>Loading...</div>}
               />
             </div>
           </div>

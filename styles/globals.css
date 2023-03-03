@@ -67,7 +67,7 @@ a {
   background-position: center;
 }
 .image {
-  background-image: url("https://source.unsplash.com/random/1920x1280");
+  background-image: url("https://source.unsplash.com/random/?query=podcast/1920x1280");
 }
 .btn-shrink:active {
   transform: scale(0.97);

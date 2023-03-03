@@ -1,4 +1,4 @@
-import { Card, Col, Grid, Text } from "@nextui-org/react";
+import { Card, Col, Grid, Text, Loading } from "@nextui-org/react";
 import { useState, useEffect } from "react";
 
 export default function PodCastCard(props) {
@@ -11,23 +11,46 @@ export default function PodCastCard(props) {
   const handleLeave = () => {
     setShowDesc(false);
   };
-  useEffect(() => {
-    const defaultApi =
-      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=og3JYOJYnvJPmKmj5DzEGhh7BS0_8e_hYaUjUCTJLcc";
-    apiJson(defaultApi);
 
-    async function apiJson(defaults) {
-      const apiUrlData = await fetch(defaults);
-      const apiData = await apiUrlData.json();
-      showDefault(apiData);
+  async function getRandomPodcastPhoto() {
+    const defaultApi =
+      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=-EhqJf2oW_B3R3y6lBW70uTolREUZTDKKLooDkyZa5U";
+    const apiUrlData = await fetch(defaultApi);
+    const apiData = await apiUrlData.json();
+    const photoUrl = apiData.urls.small;
+    return photoUrl;
+  }
+  const [photoUrl, setPhotoUrl] = useState(null);
+
+  useEffect(() => {
+    async function fetchPhoto() {
+      const url = await getRandomPodcastPhoto();
+      setPhotoUrl(url);
     }
-    function showDefault(Photo) {
-      setUrl(Photo.urls.small);
-    }
+
+    fetchPhoto();
   }, []);
 
-  const [url, setUrl] = useState("");
-
+  if (!photoUrl) {
+    return (
+      <Grid sm={6} md={props.col} className="g-4">
+        <Card
+          isPressable
+          css={{ h: "300px" }}
+          style={{ backgroundColor: "#ffffff20" }}
+        >
+          <Card.Body>
+            <Loading
+              className="my-auto"
+              type="points-opacity"
+              color="white"
+              size="xl"
+            />
+          </Card.Body>
+        </Card>
+      </Grid>
+    );
+  }
   return (
     <>
       <Grid sm={6} md={props.col} className="g-4">
@@ -55,7 +78,7 @@ export default function PodCastCard(props) {
           </Card.Header>
           <Card.Body css={{ p: 0 }}>
             <Card.Image
-              src={url}
+              src={photoUrl}
               objectFit="cover"
               width="100%"
               height="100%"
