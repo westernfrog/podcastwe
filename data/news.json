@@ -1,31 +1,26 @@
 [
   {
     "id": 0,
-    "size": 4,
     "title": "Podcast equipment and technology",
     "desc": "For quality podcast recordings, beginners require appropriate equipment and technology, such as a digital audio recorder..."
   },
   {
     "id": 1,
-    "size": 8,
     "title": "Podcast hosting and distribution",
     "desc": "Podcast hosting and distribution means the service that stores and serves your audio files to the listeners..."
   },
   {
     "id": 2,
-    "size": 4,
     "title": "Podcast marketing and promotion",
     "desc": "Podcast marketing and promotion refer to the activities aimed at increasing the visibility and reach of your podcast to attract more listeners and grow your audience..."
   },
   {
     "id": 3,
-    "size": 6,
     "title": "Podcast storytelling and narrative structure",
     "desc": "Podcast storytelling refers to the art of using words, sound and music to crate an engaging and immersive audio experience for listeners..."
   },
   {
     "id": 4,
-    "size": 6,
     "title": "Podcast audience growth",
     "desc": "Podcast audience growth refers to the process of increasing the number of listeners for you podcast. Here are some strategies for growing your podcast audience..."
   }

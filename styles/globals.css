@@ -1,14 +1,14 @@
 body {
   color: #fff;
-  background: radial-gradient(circle at top left, #110000, #000);
+  background: radial-gradient(circle at top left, #100000, #000);
   overflow-x: hidden;
 }
 
 .bg-red {
-  background: radial-gradient(circle at top, #110000, #000);
+  background: radial-gradient(circle at top, #100000, #000000);
 }
 .bg-grad {
-  background: linear-gradient(to top right, #110000 0%, #000 100%);
+  background: linear-gradient(to top right, #100000 0%, #000000 100%);
 }
 .fs-7,
 .nav-link,
@@ -48,12 +48,12 @@ a {
 .pic1 {
   background-image: url("../public/image1.jpg");
   background-size: cover;
-  background-position: 5%;
+  background-position: center;
 }
 .pic2 {
   background-image: url("../public/image3.jpg");
   background-size: cover;
-  background-position: 5%;
+  background-position: center;
 }
 .pic3 {
   background: radial-gradient(
@@ -64,7 +64,7 @@ a {
     ),
     url("../public/image2.jpg");
   background-size: cover;
-  background-position: 5%;
+  background-position: center;
 }
 .image {
   background-image: url("https://source.unsplash.com/random/1920x1280");
@@ -107,7 +107,7 @@ a {
   text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
 }
 .text-shadow-2 {
-  text-shadow: 3px 3px 9px #000;
+  text-shadow: 3px 3px 9px #000000;
 }
 .text-shadow-3 {
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);

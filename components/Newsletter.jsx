@@ -23,29 +23,29 @@ export default function Newsletter() {
   return (
     <div className="container text-dm my-5 pb-5 text-light">
       <div
-        class="card rounded-5 p-3 p-lg-5 image"
+        className="card rounded-5 p-3 p-lg-5 image"
         style={{ backgroundColor: "#111" }}
       >
-        <div class="card-body">
-          <h5 class="card-title fs-4 text-shadow-3">
+        <div className="card-body">
+          <h5 className="card-title fs-4 text-shadow-3">
             You will be updated with new episodes every day!
           </h5>
-          <h6 class="card-subtitle mb-2 text-muted fs-7 fw-light text-dm">
+          <h6 className="card-subtitle mb-2 text-muted fs-7 fw-light text-dm">
             podcastwe.com
           </h6>
 
           <div className="col-lg-4 col-sm-6 mt-4">
-            <p class="card-text fs-5 mb-0 text-poppins text-shadow-3">
+            <p className="card-text fs-5 mb-0 text-poppins text-shadow-3">
               Subscribe to our NewsLetter
             </p>
-            <div class="input-group">
+            <div className="input-group">
               <input
                 type="email"
                 className="form-control rounded-5 shadow"
                 placeholder="Your Email"
               />
               <Button flat color="secondary" auto className="rounded-5">
-                <i class="fa-solid fa-paper-plane"></i>
+                <i className="fa-solid fa-paper-plane"></i>
               </Button>
             </div>
           </div>

@@ -20,7 +20,7 @@ export default function EditorPick(params) {
             <Buttons url="contact" html="See More" />
           </div>
         </div>
-        <div class="row align-items-stretch g-4 py-5">
+        <div className="row align-items-stretch g-4 py-5">
           {editorpick.map((editorpick) => (
             <PodCastCard
               key={editorpick.id}

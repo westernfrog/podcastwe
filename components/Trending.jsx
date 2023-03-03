@@ -20,7 +20,7 @@ export default function Trending(params) {
             <Buttons url="contact" html="See More" />
           </div>
         </div>
-        <div class="row align-items-stretch g-4 py-5">
+        <div className="row align-items-stretch g-4 py-5">
           {trending.map((trending) => (
             <PodCastCard
               key={trending.id}

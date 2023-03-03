@@ -22,7 +22,7 @@ export default function PodCastCard(props) {
       showDefault(apiData);
     }
     function showDefault(Photo) {
-      setUrl(Photo.urls.full);
+      setUrl(Photo.urls.small);
     }
   }, []);
 
@@ -59,7 +59,6 @@ export default function PodCastCard(props) {
               objectFit="cover"
               width="100%"
               height="100%"
-              loading="lazy"
               alt="Relaxing app background"
             />
           </Card.Body>

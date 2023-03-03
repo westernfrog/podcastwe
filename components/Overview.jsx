@@ -35,13 +35,42 @@ export default function Overview(params) {
     <>
       <div className="container my-4">
         <div className="row display-1 text-poppins text-uppercase text-shadow-2">
-          <div className="col-sm">listen</div>
+          <div className="col-sm">
+            <span className="align-middle">Listen</span>
+            <div className="media align-items-center d-none">
+              <img
+                src="../public/image1.jpg"
+                className="mr-3 col-4"
+                alt="pic1"
+              />
+            </div>
+          </div>
           <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 shadow"></div>
-          <div className="col-sm">new</div>
+          <div className="col-sm">
+            <span className="align-middle">New</span>
+            <div className="media align-items-center d-none">
+              <img
+                src="../public/image2.jpg"
+                className="mr-3 col-4"
+                alt="pic2"
+              />
+            </div>
+          </div>
           <div className="col-sm-2 d-lg-block d-none pic3 rounded-pill my-3 shadow"></div>
-          <div className="col-sm">podcast</div>
+          <div className="col-sm">
+            <span className="align-middle">Podcast</span>
+            <div className="media align-items-center d-none">
+              <img
+                src="../public/image3.jpg"
+                className="mr-3 col-4"
+                alt="pic3"
+              />
+            </div>
+          </div>
           <div className="col-sm-3 d-lg-block d-none pic2 rounded-pill my-3 shadow"></div>
-          <div className="col-sm">order</div>
+          <div className="col-sm">
+            <span className="align-middle">Order</span>
+          </div>
         </div>
 
         <div className="row mt-2 mt-lg-5 text-dm">
@@ -52,7 +81,6 @@ export default function Overview(params) {
               provide high-quality content that informs, educates, and inspires
               our readers.
             </p>
-            {/* <Buttons url="contact" html="Contact us" /> */}
             <Support />
           </div>
           <div
@@ -63,7 +91,7 @@ export default function Overview(params) {
             <div className="text-md-start ">
               <div className="row-cols-1">
                 {topPodcasts.map((podcast, index) => (
-                  <div key={index} className="col pe-0 pe-lg-5 bg-grad">
+                  <div key={index} className="col pe-0 pe-lg-5 bg-inherit">
                     <TopPodcastCard link={podcast.link} />
                   </div>
                 ))}

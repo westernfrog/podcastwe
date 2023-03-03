@@ -20,15 +20,24 @@ export default function News(params) {
             <Buttons url="contact" html="See More" />
           </div>
         </div>
-        <div class="row align-items-stretch g-4 py-5">
-          {news.map((news) => (
-            <PodCastCard
-              key={news.id}
-              col={news.size}
-              title={news.title}
-              desc={news.desc}
-            />
-          ))}
+        <div className="row align-items-stretch g-4 py-5">
+          {news.map((newsItem) =>
+            newsItem.id === 1 ? (
+              <PodCastCard
+                key={newsItem.id}
+                col={8}
+                title={newsItem.title}
+                desc={newsItem.desc}
+              />
+            ) : (
+              <PodCastCard
+                key={newsItem.id}
+                col={4}
+                title={newsItem.title}
+                desc={newsItem.desc}
+              />
+            )
+          )}
         </div>
       </div>
     </>
