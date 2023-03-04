@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Header(params) {
+export default function Header() {
   return (
     <>
       <div className="sticky-top bg-nav">

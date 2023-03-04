@@ -70,7 +70,7 @@ export default function Footer() {
                 <li className="nav-item mb-2">
                   <button
                     type="button"
-                    class="btn nav-link p-0 text-muted mx-0"
+                    className="btn nav-link p-0 text-muted mx-0"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                     style={{ boxShadow: "none" }}
@@ -107,13 +107,13 @@ export default function Footer() {
                     </Modal.Header>
                     <Modal.Body>
                       <Text id="modal-description">
-                        <p className="fs-5 mb-4">
+                        <p className="fs-6 mb-4">
                           This Privacy Policy explains how we collect, use, and
                           share personal information that we obtain from
                           visitors to our podcast blogging website.
                         </p>
                         <ul className="lh-lg text-dm ms-0 ps-0">
-                          <li className="fs-4 fw-bold" id="1">
+                          <li className="fs-5 fw-bold" id="1">
                             Information Collection and Use
                           </li>
                           <p className="fs-6">
@@ -127,7 +127,7 @@ export default function Footer() {
                             respond to your inquiries, and provide you with our
                             podcast or other promotional materials.
                           </p>
-                          <li className="fs-4 fw-bold" id="2">
+                          <li className="fs-5 fw-bold" id="2">
                             Cookies and Analytics
                           </li>
                           <p className="fs-6">
@@ -139,7 +139,7 @@ export default function Footer() {
                             technologies to collect information about your use
                             of our website and podcast.
                           </p>
-                          <li className="fs-4 fw-bold" id="3">
+                          <li className="fs-5 fw-bold" id="3">
                             Information Sharing
                           </li>
                           <p className="fs-6">
@@ -152,7 +152,7 @@ export default function Footer() {
                             required by law or to protect our rights or
                             property.
                           </p>
-                          <li className="fs-4 fw-bold" id="4">
+                          <li className="fs-5 fw-bold" id="4">
                             Your Rights
                           </li>
                           <p className="fs-6">
@@ -162,7 +162,7 @@ export default function Footer() {
                             materials at any time by following the instructions
                             in the email.
                           </p>
-                          <li className="fs-4 fw-bold" id="5">
+                          <li className="fs-5 fw-bold" id="5">
                             Changes to this Policy
                           </li>
                           <p className="fs-6">
@@ -221,14 +221,14 @@ export default function Footer() {
                     </Modal.Header>
                     <Modal.Body>
                       <Text id="modal-description">
-                        <p className="fs-5 mb-4">
+                        <p className="fs-6 mb-4">
                           This page explains our terms of service, which contain
                           important information about your legal rights. When
                           you use podcastwe.com, you&apos;re agreeing to these
                           terms.
                         </p>
                         <ul className="lh-lg text-dm ms-0 ps-0">
-                          <li className="fs-4 fw-bold" id="1">
+                          <li className="fs-5 fw-bold" id="1">
                             Intellectual Property
                           </li>
                           <p className="fs-6">
@@ -236,7 +236,7 @@ export default function Footer() {
                             property of our company and may not be reproduced or
                             used without our permission.
                           </p>
-                          <li className="fs-4 fw-bold" id="2">
+                          <li className="fs-5 fw-bold" id="2">
                             User Generated Content
                           </li>
                           <p className="fs-6">
@@ -246,7 +246,7 @@ export default function Footer() {
                             irrevocable right to use, modify, and distribute
                             your content in any medium and for any purpose.
                           </p>
-                          <li className="fs-4 fw-bold" id="3">
+                          <li className="fs-5 fw-bold" id="3">
                             Prohibited Use
                           </li>
                           <p className="fs-6">
@@ -256,7 +256,7 @@ export default function Footer() {
                             any content that is offensive, defamatory, or
                             infringes on the rights of others.
                           </p>
-                          <li className="fs-4 fw-bold" id="4">
+                          <li className="fs-5 fw-bold" id="4">
                             Limitations of Liability
                           </li>
                           <p className="fs-6">
@@ -266,7 +266,7 @@ export default function Footer() {
                             completeness of any information on our website and
                             we are not responsible for any errors or omissions.
                           </p>
-                          <li className="fs-4 fw-bold" id="5">
+                          <li className="fs-5 fw-bold" id="5">
                             Indemnification
                           </li>
                           <p className="fs-6">
@@ -275,7 +275,7 @@ export default function Footer() {
                             use of our website or your violation of these terms
                             and conditions.
                           </p>
-                          <li className="fs-4 fw-bold" id="5">
+                          <li className="fs-5 fw-bold" id="5">
                             Changes of These Terms
                           </li>
                           <p className="fs-6">
@@ -284,7 +284,7 @@ export default function Footer() {
                             changes to these terms by posting the new terms on
                             our website.
                           </p>
-                          <li className="fs-4 fw-bold" id="5">
+                          <li className="fs-5 fw-bold" id="5">
                             Governing Law
                           </li>
                           <p className="fs-6">
@@ -293,7 +293,7 @@ export default function Footer() {
                             from these terms and conditions will be resolved in
                             the courts of [insert jurisdiction].
                           </p>
-                          <li className="fs-4 fw-bold" id="5">
+                          <li className="fs-5 fw-bold" id="5">
                             Contact Us
                           </li>
                           <p className="fs-6">

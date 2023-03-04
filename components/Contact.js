@@ -1,7 +1,7 @@
-import { Button, useInput, Input } from "@nextui-org/react";
+import { Button, useInput, Input, Textarea } from "@nextui-org/react";
 import { useMemo } from "react";
 
-export default function Contact(params) {
+export default function Contact() {
   const { value, reset, bindings } = useInput("");
 
   const validateEmail = (value) => {
@@ -16,38 +16,38 @@ export default function Contact(params) {
       };
     const isValid = validateEmail(value);
     return {
-      text: isValid ? "Correct email" : "Enter a valid email",
-      color: isValid ? "success" : "error",
+      text: isValid ? "" : "Enter a valid email",
+      color: isValid ? "secondary" : "error",
     };
   }, [value]);
   return (
     <>
       <div
-        class="modal fade text-black
+        className="modal fade text-black
          rounded"
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content rounded-5">
-            <div class="modal-header mx-auto">
-              <h4 class="modal-title" id="exampleModalLabel">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content rounded-5">
+            <div className="modal-header mx-auto">
+              <h4 className="modal-title" id="exampleModalLabel">
                 Contact us
               </h4>
             </div>
-            <div class="modal-body">
+            <div className="modal-body text-dm">
               <form>
-                <div class="mb-3 d-grid">
+                <div className="mb-3 d-grid">
                   <Input
                     clearable
                     initialValue="John Doe"
                     label="Your Name"
-                    placeholder="Enter your name"
+                    placeholder="Enter your Name"
                   />
                 </div>
-                <div class="mb-3 d-grid">
+                <div className="mb-3 d-grid">
                   <Input
                     {...bindings}
                     clearable
@@ -59,27 +59,20 @@ export default function Contact(params) {
                     helperText={helper.text}
                     type="email"
                     label="Email"
-                    placeholder="With regex validation"
+                    placeholder="Enter your E-mail"
                   />
                 </div>
-                <div class="mb-3 d-grid">
-                  <Input
-                    clearable
-                    initialValue="John Doe"
-                    label="Your Name"
-                    placeholder="Enter your name"
+                <div className="mb-3 d-grid">
+                  <Textarea
+                    initialValue="Hey! you are doing amazing ✨"
+                    placeholder="Write something for us!"
+                    label="Your Message"
                   />
-                </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label">
-                    Message:
-                  </label>
-                  <textarea class="form-control" id="message-text"></textarea>
                 </div>
               </form>
             </div>
-            <div class="modal-footer text-dm">
-              <Button color="error" auto ghost data-bs-dismiss="modal">
+            <div className="modal-footer text-dm">
+              <Button color="error" auto flat data-bs-dismiss="modal">
                 Close
               </Button>
               <Button shadow color="primary" auto>

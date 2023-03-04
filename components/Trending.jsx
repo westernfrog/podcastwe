@@ -2,7 +2,7 @@ import Buttons from "./Buttons";
 import PodCastCard from "./PodCastCard";
 import trending from "../data/trending.json";
 
-export default function Trending(params) {
+export default function Trending() {
   return (
     <>
       <div className="container my-5 py-5">

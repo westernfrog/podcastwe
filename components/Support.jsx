@@ -1,4 +1,4 @@
-export default function Support(params) {
+export default function Support() {
   return (
     <>
       <div className="col-sm my-5 text-center">

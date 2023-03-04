@@ -7,7 +7,7 @@ import image1 from "../public/image1.jpg";
 import image2 from "../public/image2.jpg";
 import image3 from "../public/image3.jpg";
 
-export default function Overview(params) {
+export default function Overview() {
   const [className, setClassName] = useState(
     "d-flex align-items-center w-100 pic3 shadow"
   );
@@ -48,6 +48,7 @@ export default function Overview(params) {
                 alt="pic1"
                 width={500}
                 height={500}
+                loading="lazy"
                 onError={() => <div>Loading...</div>}
               />
             </div>
@@ -62,6 +63,7 @@ export default function Overview(params) {
                 alt="pic2"
                 width={500}
                 height={500}
+                loading="lazy"
                 onError={() => <div>Loading...</div>}
               />
             </div>
@@ -76,6 +78,7 @@ export default function Overview(params) {
                 alt="pic3"
                 width={500}
                 height={500}
+                loading="lazy"
                 onError={() => <div>Loading...</div>}
               />
             </div>
@@ -125,6 +128,7 @@ export default function Overview(params) {
           <div
             className={`${className} my-5 py-5`}
             style={{ height: 400 }}
+            loading="lazy"
           ></div>
         </div>
       </div>

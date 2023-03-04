@@ -2,7 +2,7 @@ import Buttons from "./Buttons";
 import PodCastCard from "./PodCastCard";
 import editorpick from "../data/editorpick.json";
 
-export default function EditorPick(params) {
+export default function EditorPick() {
   return (
     <>
       <div className="container my-5 py-5">

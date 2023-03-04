@@ -2,7 +2,7 @@ import Buttons from "./Buttons";
 import PodCastCard from "./PodCastCard";
 import news from "../data/news.json";
 
-export default function News(params) {
+export default function News() {
   return (
     <>
       <div className="container my-5 py-5">

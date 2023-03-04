@@ -1,4 +1,4 @@
-export default function About(params) {
+export default function About() {
   return (
     <>
       <div className="container col-md-5 my-1 my-lg-4 py-1 py-lg-5">
