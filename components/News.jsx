@@ -25,6 +25,7 @@ export default function News(params) {
             newsItem.id === 1 ? (
               <PodCastCard
                 key={newsItem.id}
+                id={newsItem.id}
                 col={8}
                 title={newsItem.title}
                 desc={newsItem.desc}
@@ -32,6 +33,7 @@ export default function News(params) {
             ) : (
               <PodCastCard
                 key={newsItem.id}
+                id={newsItem.id}
                 col={4}
                 title={newsItem.title}
                 desc={newsItem.desc}

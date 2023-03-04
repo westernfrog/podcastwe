@@ -5,7 +5,7 @@ body {
 }
 
 .bg-grey {
-  background: radial-gradient(circle at top, #111, #000000);
+  background: radial-gradient(circle at top right, #111, #000000);
 }
 .bg-nav {
   background: linear-gradient(to top right, #00000010 0%, #00000060 100%);

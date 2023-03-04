@@ -41,7 +41,7 @@ export default function Newsletter() {
             <div className="input-group">
               <input
                 type="email"
-                className="form-control rounded-5 shadow"
+                className="form-control rounded-5 shadow border border-2"
                 placeholder="Your Email"
                 style={{ boxShadow: "none" }}
               />

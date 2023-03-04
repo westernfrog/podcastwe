@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 export default function PodCastCard(props) {
   const [showDesc, setShowDesc] = useState(false);
+  const [photoUrl, setPhotoUrl] = useState(null);
 
   const handleHover = () => {
     setShowDesc(true);
@@ -20,16 +21,27 @@ export default function PodCastCard(props) {
     const photoUrl = apiData.urls.regular;
     return photoUrl;
   }
-  const [photoUrl, setPhotoUrl] = useState(null);
 
   useEffect(() => {
-    async function fetchPhoto() {
-      const url = await getRandomPodcastPhoto();
-      setPhotoUrl(url);
+    const storedPhotoUrl = localStorage.getItem(`podcast-photo-${props.id}`);
+    if (storedPhotoUrl) {
+      setPhotoUrl(storedPhotoUrl);
+    } else {
+      async function fetchPhoto() {
+        const url = await getRandomPodcastPhoto();
+        setPhotoUrl(url);
+        localStorage.setItem(`podcast-photo-${props.id}`, url);
+      }
+      fetchPhoto();
     }
+  }, [props.id]);
 
-    fetchPhoto();
-  }, []);
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      localStorage.removeItem(`podcast-photo-${props.id}`);
+    }, 7200000);
+    return () => clearTimeout(timeout);
+  }, [props.id]);
 
   if (!photoUrl) {
     return (

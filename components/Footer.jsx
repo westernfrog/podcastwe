@@ -2,15 +2,15 @@ import Link from "next/link";
 import { useState } from "react";
 import { Modal, Button, Text } from "@nextui-org/react";
 
-export default function Footer(params) {
+export default function Footer() {
   const [privacy, setPrivacy] = useState(false);
   const [terms, setTerms] = useState(false);
 
   return (
     <>
-      <div className="container">
+      <div className="container pb-3">
         <div className="container-fluid px-0">
-          <footer className="row py-5 mt-5">
+          <footer className="row mt-5">
             <div className="col-md-4">
               <Link
                 href="/"
@@ -30,8 +30,8 @@ export default function Footer(params) {
             <div className="col d-lg-block d-none"></div>
             <div className="col d-lg-block d-none"></div>
 
-            <div className="col my-5 my-lg-0">
-              <h6>Navigation</h6>
+            <div className="col">
+              <h6 className="text-uppercase fs-7">Navigation</h6>
               <ul className="nav flex-column mx-0">
                 <li className="nav-item mb-2">
                   <Link href="/" className="nav-link p-0 text-muted mx-0">
@@ -59,8 +59,8 @@ export default function Footer(params) {
               </ul>
             </div>
 
-            <div className="col my-5 my-lg-0">
-              <h6>Company</h6>
+            <div className="col">
+              <h6 className="text-uppercase fs-7">Company</h6>
               <ul className="nav flex-column mx-0">
                 <li className="nav-item mb-2">
                   <Link href="about" className="nav-link p-0 text-muted mx-0">

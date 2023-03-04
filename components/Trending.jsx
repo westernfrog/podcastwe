@@ -24,6 +24,7 @@ export default function Trending(params) {
           {trending.map((trending) => (
             <PodCastCard
               key={trending.id}
+              id={trending.id}
               col={4}
               title={trending.title}
               desc={trending.desc}

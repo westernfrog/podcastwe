@@ -24,6 +24,7 @@ export default function EditorPick(params) {
           {editorpick.map((editorpick) => (
             <PodCastCard
               key={editorpick.id}
+              id={editorpick.id}
               col={4}
               title={editorpick.title}
               desc={editorpick.desc}
