@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import EditorPick from "@/components/EditorPick";
 import News from "@/components/News";
 import Newsletter from "@/components/Newsletter";
@@ -12,6 +13,7 @@ export default function Home() {
       <Newsletter />
       <Trending />
       <EditorPick />
+      <Contact />
     </>
   );
 }

@@ -83,16 +83,11 @@ a {
 }
 .image {
   background-image: url("https://source.unsplash.com/random");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.image1 {
-  background-image: url("https://source.unsplash.com/random");
-}
-.image2 {
-  background-image: url("https://source.unsplash.com/random");
-}
-.image3 {
-  background-image: url("https://source.unsplash.com/random");
-}
+
 .btn-shrink:active {
   transform: scale(0.97);
   transition: transform 100ms ease-in-out;
@@ -113,11 +108,11 @@ a {
   width: 5px;
 }
 ::-webkit-scrollbar-track {
-  background-color: #20262e;
+  background-color: inherit;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #ecf2ff;
+  background-color: #eee;
   border: none;
   border-radius: 10px;
 }

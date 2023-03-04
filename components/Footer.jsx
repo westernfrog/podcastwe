@@ -10,8 +10,8 @@ export default function Footer() {
     <>
       <div className="container pb-3">
         <div className="container-fluid px-0">
-          <footer className="row mt-5">
-            <div className="col-md-4">
+          <footer className="row my-4">
+            <div className="col-md-4 mb-4 mb-lg-0">
               <Link
                 href="/"
                 className="d-flex align-items-center mb-3 link-light text-decoration-none"
@@ -68,21 +68,24 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link
-                    href="/contact"
-                    className="nav-link p-0 text-muted mx-0"
+                  <button
+                    type="button"
+                    class="btn nav-link p-0 text-muted mx-0"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    style={{ boxShadow: "none" }}
                   >
                     Contact
-                  </Link>
+                  </button>
                 </li>
                 <li className="nav-item mb-2">
-                  <p
-                    className="nav-link p-0 text-muted mx-0"
+                  <button
+                    className="btn nav-link p-0 text-muted mx-0"
                     onClick={() => setPrivacy(true)}
-                    style={{ cursor: "pointer" }}
+                    style={{ boxShadow: "none" }}
                   >
                     Privacy Policy
-                  </p>
+                  </button>
                   <Modal
                     scroll
                     blur
@@ -190,13 +193,13 @@ export default function Footer() {
                   </Modal>
                 </li>
                 <li className="nav-item mb-2">
-                  <p
-                    className="nav-link p-0 text-muted mx-0"
+                  <button
+                    className="btn nav-link p-0 text-muted mx-0"
                     onClick={() => setTerms(true)}
-                    style={{ cursor: "pointer" }}
+                    style={{ boxShadow: "none" }}
                   >
                     Terms & Conditions
-                  </p>
+                  </button>
                   <Modal
                     scroll
                     blur
