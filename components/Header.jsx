@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Contact from "./Contact";
 
 export default function Header() {
   return (
@@ -54,7 +55,6 @@ export default function Header() {
                     { href: "/news", label: "News" },
                     { href: "/trending", label: "Trending" },
                     { href: "/about", label: "About Us" },
-                    { href: "/contact", label: "Contact" },
                   ].map(({ href, label }, index) => (
                     <li className="nav-item" key={index}>
                       <Link className="nav-link fs-5 fw-bold my-2" href={href}>
@@ -62,6 +62,15 @@ export default function Header() {
                       </Link>
                     </li>
                   ))}
+                  <li className="nav-item">
+                    <p
+                      className="nav-link fs-5 fw-bold my-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      Contact
+                    </p>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -76,7 +85,6 @@ export default function Header() {
                   { href: "/news", label: "News" },
                   { href: "/trending", label: "Trending" },
                   { href: "/about", label: "About Us" },
-                  { href: "/contact", label: "Contact" },
                 ].map(({ href, label }, index) => (
                   <li className="nav-item" key={index}>
                     <Link className="nav-link" href={href}>
@@ -84,11 +92,21 @@ export default function Header() {
                     </Link>
                   </li>
                 ))}
+                <li className="nav-item">
+                  <p
+                    className="nav-link fs-7"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Contact
+                  </p>
+                </li>
               </ul>
             </div>
           </div>
         </nav>
       </div>
+      <Contact />
     </>
   );
 }

@@ -66,13 +66,7 @@ a {
   background-position: center;
 }
 .pic3 {
-  background: radial-gradient(
-      circle at top left,
-      #ffffff10 0%,
-      #00000070 50%,
-      #ffffff00 100%
-    ),
-    url("../public/image2.jpg");
+  background: url("../public/image2.jpg");
   background-size: cover;
   background-position: center;
 }
