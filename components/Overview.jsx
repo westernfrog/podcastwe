@@ -16,11 +16,9 @@ export default function Overview() {
     const handleResize = () => {
       const width = window.innerWidth;
       if (width <= 768) {
-        setClassName(
-          "d-flex align-items-center w-100 pic3 rounded-left shadow"
-        );
+        setClassName("d-flex align-items-center w-100 pic3 rounded-left");
       } else {
-        setClassName("d-flex align-items-center w-100 pic3 rounded shadow");
+        setClassName("d-flex align-items-center w-100 pic3 rounded");
       }
     };
     window.addEventListener("resize", handleResize);

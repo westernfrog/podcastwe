@@ -21,23 +21,21 @@ export default function Contact() {
     var emailRegex =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-    if (name.length > 0 && email.length > 0) {
-      if (email.match(emailRegex)) {
-        setEmailError(false);
+    if (name.length > 0 && email.match(emailRegex)) {
+      setEmailError(false);
 
-        const data = { name, email, message };
-        const res = await fetch("/api/message", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        });
-        const response = await res.json();
-        console.log(response);
-      } else {
-        setEmailError(true);
-      }
+      const data = { name, email, message };
+      const res = await fetch("/api/message", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      const response = await res.json();
+      console.log(response);
+    } else {
+      setEmailError(true);
     }
   };
 

@@ -8,9 +8,7 @@ body {
   background: radial-gradient(circle at top right, #111, #000000);
 }
 .bg-nav {
-  background: linear-gradient(to top right, #00000010 0%, #00000060 100%);
   backdrop-filter: saturate(180%) blur(20px);
-  box-shadow: rgb(2 1 1 / 10%) 0px 5px 20px -5px;
 }
 
 @media (max-width: 992px) {
@@ -54,6 +52,10 @@ h6,
 
 .rounded {
   border-radius: 50px !important;
+}
+.rounded-left {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 a {
   text-decoration: none;
