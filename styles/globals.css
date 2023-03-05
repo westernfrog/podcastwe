@@ -25,6 +25,9 @@ body {
 p {
   font-size: 14px;
 }
+.fs-8 {
+  font-size: 12px;
+}
 .display-1 {
   font-size: calc(2rem + 4.5vw);
   font-weight: 300;

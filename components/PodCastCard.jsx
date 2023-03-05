@@ -39,7 +39,7 @@ export default function PodCastCard(props) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       localStorage.removeItem(`podcast-photo-${props.id}`);
-    }, 7200000);
+    }, 3600000);
     return () => clearTimeout(timeout);
   }, [props.id]);
 

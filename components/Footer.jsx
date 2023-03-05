@@ -68,24 +68,23 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <button
-                    type="button"
-                    className="btn nav-link p-0 text-muted mx-0"
+                  <p
+                    className="nav-link p-0 text-muted mx-0"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
-                    style={{ boxShadow: "none" }}
+                    style={{ cursor: "pointer" }}
                   >
                     Contact
-                  </button>
+                  </p>
                 </li>
                 <li className="nav-item mb-2">
-                  <button
-                    className="btn nav-link p-0 text-muted mx-0"
+                  <p
+                    className="nav-link p-0 text-muted mx-0"
                     onClick={() => setPrivacy(true)}
-                    style={{ boxShadow: "none" }}
+                    style={{ cursor: "pointer" }}
                   >
                     Privacy Policy
-                  </button>
+                  </p>
                   <Modal
                     scroll
                     blur
@@ -193,13 +192,13 @@ export default function Footer() {
                   </Modal>
                 </li>
                 <li className="nav-item mb-2">
-                  <button
-                    className="btn nav-link p-0 text-muted mx-0"
+                  <p
+                    className="nav-link p-0 text-muted mx-0"
                     onClick={() => setTerms(true)}
-                    style={{ boxShadow: "none" }}
+                    style={{ cursor: "pointer" }}
                   >
                     Terms & Conditions
-                  </button>
+                  </p>
                   <Modal
                     scroll
                     blur

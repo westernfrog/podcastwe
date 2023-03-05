@@ -4,7 +4,7 @@ export default function About() {
       <div className="container col-md-5 my-1 my-lg-4 py-1 py-lg-5">
         <div className="card border-0 rounded-4 text-dark mx-auto">
           <div className="card-header border-0">
-            <h1 className="text-poppins text-shadow-3">What is PODCASTWE?</h1>
+            <h1 className="text-poppins">What is PODCASTWE?</h1>
           </div>
           <div className="card-body text-dark">
             <p className="card-text">
