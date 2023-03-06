@@ -6,6 +6,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("Hey! you are doing amazing ✨");
   const [emailError, setEmailError] = useState(false);
+  const [sendSuccess, setSendSuccess] = useState(false);
 
   const handleChange = async (e) => {
     if (e.target.name == "name") {
@@ -33,6 +34,10 @@ export default function Contact() {
         body: JSON.stringify(data),
       });
       const response = await res.json();
+      setName("");
+      setEmail("");
+      setMessage("");
+      setSendSuccess(true);
       console.log(response);
     } else {
       setEmailError(true);
@@ -104,8 +109,13 @@ export default function Contact() {
               <Button color="error" auto flat data-bs-dismiss="modal">
                 Close
               </Button>
-              <Button color="primary" auto shadow onClick={handleSubmit}>
-                Send
+              <Button
+                color={`${sendSuccess ? "secondary" : "primary"}`}
+                auto
+                shadow
+                onClick={handleSubmit}
+              >
+                {sendSuccess ? "Message Sent⚡" : "Send"}
               </Button>
             </div>
           </div>
