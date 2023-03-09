@@ -2,8 +2,8 @@ export default function About() {
   return (
     <>
       <div className="container col-md-5 my-1 my-lg-4 py-1 py-lg-5">
-        <div className="card border-0 rounded-4 text-dark mx-auto">
-          <div className="card-header border-0">
+        <div className="card border-0 rounded-4 text-dark mx-auto bg-back">
+          <div className="card-header border-0 bg-transparent">
             <h1 className="text-poppins">What is PODCASTWE?</h1>
           </div>
           <div className="card-body text-dark">
@@ -20,7 +20,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div className="card border-0 my-3 py-2 rounded-4 text-dark mx-auto">
+        <div className="card border-0 my-3 py-2 rounded-4 text-dark mx-auto bg-back">
           <div className="card-body text-dark">
             <p className="card-text">
               Contact us to share your feedback and suggestions on how we can
@@ -30,9 +30,9 @@ export default function About() {
           </div>
         </div>
 
-        <div className="card border-0 my-3 col-6 rounded py-3"></div>
-        <div className="card border-0 my-3 col-3 rounded py-2"></div>
-        <div className="card border-0 my-3 col-1 rounded py-1"></div>
+        <div className="card border-0 my-3 col-6 rounded py-3 bg-back"></div>
+        <div className="card border-0 my-3 col-3 rounded py-2 bg-back"></div>
+        <div className="card border-0 my-3 col-1 rounded py-1 bg-back"></div>
       </div>
     </>
   );

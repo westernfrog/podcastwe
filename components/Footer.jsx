@@ -118,13 +118,13 @@ export default function Footer() {
                           <p className="fs-6">
                             We may collect personal information from you, such
                             as your name and email address, when you register to
-                            use our website or subscribe to our podcast. We may
+                            use our website or subscribe to our services. We may
                             also collect information about your use of our
-                            website and podcast, such as your IP address,
-                            browser type, and the episodes you listen to. We use
-                            your personal information to communicate with you,
-                            respond to your inquiries, and provide you with our
-                            podcast or other promotional materials.
+                            website, such as your IP address, browser type, and
+                            the episodes you listen to. We use your personal
+                            information to communicate with you, respond to your
+                            inquiries, and provide you with our podcast or other
+                            promotional materials.
                           </p>
                           <li className="fs-5 fw-bold" id="2">
                             Cookies and Analytics

@@ -135,3 +135,6 @@ a {
   background-position: center center;
   background-size: cover;
 }
+.bg-back {
+  background-color: #dbd8e3;
+}

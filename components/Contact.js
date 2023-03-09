@@ -105,7 +105,7 @@ export default function Contact() {
                 </div>
               </form>
             </div>
-            <div className="modal-footer text-dm">
+            <div className="modal-footer text-dm border-0">
               <Button color="error" auto flat data-bs-dismiss="modal">
                 Close
               </Button>
