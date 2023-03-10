@@ -8,13 +8,7 @@ export default function Trending() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/api/trending", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
+      const response = await fetch("/api/trending");
       const data = await response.json();
       setTrends(data.trends);
     }
