@@ -3,7 +3,6 @@ import path from "path";
 import matter from "gray-matter";
 
 export default async function TrendsHandler(req, res) {
-  res.setHeader("Access-Control-Allow-Origin", "https://podcastwe.vercel.app/");
   const files = fs.readdirSync(path.join("posts"));
 
   const trends = files
