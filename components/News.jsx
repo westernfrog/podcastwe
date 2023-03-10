@@ -7,7 +7,13 @@ export default function News() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/api/news");
+      const response = await fetch("/api/news", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
       const data = await response.json();
       setNews(data.news);
     }

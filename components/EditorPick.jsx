@@ -7,7 +7,13 @@ export default function EditorPick() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/api/editor");
+      const response = await fetch("/api/editor", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
       const data = await response.json();
       setEditor(data.editor);
     }
