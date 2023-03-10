@@ -16,7 +16,7 @@ export default function PodCastCard(props) {
 
   async function getRandomPodcastPhoto() {
     const defaultApi =
-      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=og3JYOJYnvJPmKmj5DzEGhh7BS0_8e_hYaUjUCTJLcc";
+      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=-EhqJf2oW_B3R3y6lBW70uTolREUZTDKKLooDkyZa5U";
     const apiUrlData = await fetch(defaultApi);
     const apiData = await apiUrlData.json();
     const photoUrl = apiData.urls.regular;
@@ -24,14 +24,14 @@ export default function PodCastCard(props) {
   }
 
   useEffect(() => {
-    const storedPhotoUrl = localStorage.getItem(`podcast-photo-${props.id}`);
+    const storedPhotoUrl = localStorage.getItem(`${props.id}`);
     if (storedPhotoUrl) {
       setPhotoUrl(storedPhotoUrl);
     } else {
       async function fetchPhoto() {
         const url = await getRandomPodcastPhoto();
         setPhotoUrl(url);
-        localStorage.setItem(`podcast-photo-${props.id}`, url);
+        localStorage.setItem(`${props.id}`, url);
       }
       fetchPhoto();
     }
@@ -39,7 +39,7 @@ export default function PodCastCard(props) {
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      localStorage.removeItem(`podcast-photo-${props.id}`);
+      localStorage.removeItem(`${props.id}`);
     }, 3600000);
     return () => clearTimeout(timeout);
   }, [props.id]);
@@ -47,7 +47,7 @@ export default function PodCastCard(props) {
   if (!photoUrl) {
     return (
       <Grid sm={6} md={props.col} className="g-4">
-        <Link href="/">
+        <Link href={`/blog/${props.url}`}>
           <Card
             onMouseEnter={handleHover}
             onMouseLeave={handleLeave}
@@ -104,7 +104,7 @@ export default function PodCastCard(props) {
   return (
     <>
       <Grid sm={6} md={props.col} className="g-4">
-        <Link href="/">
+        <Link href={`/blog/${props.url}`}>
           <Card
             onMouseEnter={handleHover}
             onMouseLeave={handleLeave}

@@ -1,8 +1,20 @@
 import Buttons from "./Buttons";
 import PodCastCard from "./PodCastCard";
 import trending from "../data/trending.json";
+import { useState, useEffect } from "react";
 
 export default function Trending() {
+  const [trends, setTrends] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch("/api/trending");
+      const data = await response.json();
+      setTrends(data.trends);
+    }
+
+    fetchData();
+  }, []);
   return (
     <>
       <div className="container my-5 py-5">
@@ -21,13 +33,13 @@ export default function Trending() {
           </div>
         </div>
         <div className="row align-items-stretch g-4 py-5">
-          {trending.map((trending) => (
+          {trends.map((trending, index) => (
             <PodCastCard
-              key={trending.id}
-              id={trending.id}
+              key={index}
+              id={trending.frontmatter.title}
               col={4}
-              title={trending.title}
-              desc={trending.desc}
+              title={trending.frontmatter.title}
+              desc={trending.frontmatter.excerpt}
             />
           ))}
         </div>

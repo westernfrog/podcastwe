@@ -1,8 +1,19 @@
 import Buttons from "./Buttons";
 import PodCastCard from "./PodCastCard";
-import news from "../data/news.json";
+import { useState, useEffect } from "react";
 
 export default function News() {
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch("/api/news");
+      const data = await response.json();
+      setNews(data.news);
+    }
+
+    fetchData();
+  }, []);
   return (
     <>
       <div className="container my-5 py-5">
@@ -21,22 +32,22 @@ export default function News() {
           </div>
         </div>
         <div className="row align-items-stretch g-4 py-5">
-          {news.map((newsItem) =>
-            newsItem.id === 1 ? (
+          {news.map((newsItem, index) =>
+            index === 1 ? (
               <PodCastCard
-                key={newsItem.id}
-                id={newsItem.id}
+                key={index}
+                id={newsItem.frontmatter.title}
                 col={8}
-                title={newsItem.title}
-                desc={newsItem.desc}
+                title={newsItem.frontmatter.title}
+                desc={newsItem.frontmatter.excerpt}
               />
             ) : (
               <PodCastCard
-                key={newsItem.id}
-                id={newsItem.id}
+                key={index}
+                id={newsItem.frontmatter.title}
                 col={4}
-                title={newsItem.title}
-                desc={newsItem.desc}
+                title={newsItem.frontmatter.title}
+                desc={newsItem.frontmatter.excerpt}
               />
             )
           )}
@@ -44,4 +55,27 @@ export default function News() {
       </div>
     </>
   );
+}
+export async function getStaticProps() {
+  const files = fs.readdirSync(path.join("news/news"));
+
+  const news = files.map((filename) => {
+    const slug = filename.replace(".md", "");
+    const markdownMeta = fs.readFileSync(
+      path.join("news/news", filename),
+      "utf-8"
+    );
+
+    const { data: frontmatter } = matter(markdownMeta);
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
+  return {
+    props: {
+      news,
+    },
+  };
 }

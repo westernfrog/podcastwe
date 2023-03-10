@@ -1,8 +1,19 @@
 import Buttons from "./Buttons";
 import PodCastCard from "./PodCastCard";
-import editorpick from "../data/editorpick.json";
+import { useState, useEffect } from "react";
 
 export default function EditorPick() {
+  const [editor, setEditor] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch("/api/editor");
+      const data = await response.json();
+      setEditor(data.editor);
+    }
+
+    fetchData();
+  }, []);
   return (
     <>
       <div className="container my-5 py-5">
@@ -21,13 +32,14 @@ export default function EditorPick() {
           </div>
         </div>
         <div className="row align-items-stretch g-4 py-5">
-          {editorpick.map((editorpick) => (
+          {editor.map((editor, index) => (
             <PodCastCard
-              key={editorpick.id}
-              id={editorpick.id}
+              key={index}
+              id={editor.frontmatter.title}
               col={4}
-              title={editorpick.title}
-              desc={editorpick.desc}
+              url={editor.slug}
+              title={editor.frontmatter.title}
+              desc={editor.frontmatter.excerpt}
             />
           ))}
         </div>

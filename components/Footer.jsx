@@ -63,7 +63,7 @@ export default function Footer() {
               <h6 className="text-uppercase fs-7">Company</h6>
               <ul className="nav flex-column mx-0">
                 <li className="nav-item mb-2">
-                  <Link href="about" className="nav-link p-0 text-muted mx-0">
+                  <Link href="/about" className="nav-link p-0 text-muted mx-0">
                     About us
                   </Link>
                 </li>

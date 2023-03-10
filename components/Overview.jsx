@@ -16,9 +16,9 @@ export default function Overview() {
     const handleResize = () => {
       const width = window.innerWidth;
       if (width <= 768) {
-        setClassName("d-flex align-items-center w-100 pic3 rounded-left");
+        setClassName("w-100 pic3 rounded-left");
       } else {
-        setClassName("d-flex align-items-center w-100 pic3 rounded");
+        setClassName("w-100 pic3 rounded");
       }
     };
     window.addEventListener("resize", handleResize);
@@ -124,8 +124,8 @@ export default function Overview() {
 
           <Spacer y={3} x={0} />
           <div
-            className={`${className} my-5 py-5`}
-            style={{ height: 400 }}
+            className={`${className} my-5 p-5`}
+            style={{ height: 500 }}
             loading="lazy"
           ></div>
         </div>
