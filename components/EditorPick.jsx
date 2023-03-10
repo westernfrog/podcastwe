@@ -7,7 +7,7 @@ export default function EditorPick() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/api/editor");
+      const response = await fetch("https://podcastwe.vercel.app/api/editor");
       const data = await response.json();
       setEditor(data.editor);
     }

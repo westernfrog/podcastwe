@@ -8,7 +8,7 @@ export default function Trending() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/api/trending");
+      const response = await fetch("https://podcastwe.vercel.app/api/trending");
       const data = await response.json();
       setTrends(data.trends);
     }

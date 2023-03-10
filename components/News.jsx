@@ -7,7 +7,7 @@ export default function News() {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/api/news");
+      const response = await fetch("https://podcastwe.vercel.app/api/news");
       const data = await response.json();
       setNews(data.news);
     }
