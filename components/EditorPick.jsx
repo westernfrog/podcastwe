@@ -1,16 +1,20 @@
 import Buttons from "./Buttons";
 import PodCastCard from "./PodCastCard";
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function EditorPick() {
   const [editor, setEditor] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/api/editor");
-      console.log(response);
-      const data = await response.json();
-      setEditor(data.editor);
+      try {
+        const response = await axios.get("/api/editor");
+        console.log(response);
+        setEditor(response.data.editor);
+      } catch (error) {
+        console.error(error);
+      }
     }
 
     fetchData();

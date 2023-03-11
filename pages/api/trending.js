@@ -3,13 +3,13 @@ import path from "path";
 import matter from "gray-matter";
 
 export default async function TrendsHandler(req, res) {
-  const files = fs.readdirSync(path.join("posts"));
+  const files = fs.readdirSync(path.join("public/posts"));
 
   const trends = files
     .map((filename) => {
       const slug = filename.replace(".md", "");
       const markdownMeta = fs.readFileSync(
-        path.join("posts", filename),
+        path.join("public/posts", filename),
         "utf-8"
       );
 

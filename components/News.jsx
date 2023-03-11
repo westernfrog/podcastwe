@@ -1,16 +1,20 @@
 import Buttons from "./Buttons";
 import PodCastCard from "./PodCastCard";
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function News() {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/api/news");
-      console.log(response);
-      const data = await response.json();
-      setNews(data.editor);
+      try {
+        const response = await axios.get("/api/news");
+        console.log(response);
+        setNews(response.data.news);
+      } catch (error) {
+        console.error(error);
+      }
     }
 
     fetchData();

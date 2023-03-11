@@ -1,17 +1,20 @@
 import Buttons from "./Buttons";
 import PodCastCard from "./PodCastCard";
-import trending from "../data/trending.json";
 import { useState, useEffect } from "react";
+import axios from "axios";
 
 export default function Trending() {
   const [trends, setTrends] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("/api/trending");
-      console.log(response);
-      const data = await response.json();
-      setTrends(data.editor);
+      try {
+        const response = await axios.get("/api/trending");
+        console.log(response);
+        setTrends(response.data.trends);
+      } catch (error) {
+        console.error(error);
+      }
     }
 
     fetchData();

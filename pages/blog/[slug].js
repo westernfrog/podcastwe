@@ -3,8 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import { useEffect, useState } from "react";
-import { Image } from "@nextui-org/react";
-import { Card, Col, Text, Row, Button } from "@nextui-org/react";
+import { Card, Col, Text } from "@nextui-org/react";
 
 export default function PostPage({ frontmatter: { title, excerpt }, content }) {
   const [myItem, setMyItem] = useState(null);
@@ -69,7 +68,7 @@ export default function PostPage({ frontmatter: { title, excerpt }, content }) {
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join("posts"));
+  const files = fs.readdirSync(path.join("public/posts"));
 
   const paths = files.map((filename) => ({
     params: {
@@ -85,7 +84,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join("posts", slug + ".md"),
+    path.join("public/posts", slug + ".md"),
     "utf-8"
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);
