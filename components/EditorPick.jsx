@@ -9,7 +9,9 @@ export default function EditorPick() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get("/api/editor");
+        const response = await axios.get(
+          "https://podcastwe.vercel.app/api/editor"
+        );
         console.log(response);
         setEditor(response.data.editor);
       } catch (error) {
