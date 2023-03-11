@@ -9,9 +9,7 @@ export default function Trending() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(
-          "https://podcastwe.vercel.app/api/trending"
-        );
+        const response = await axios.get("/api/trending");
         console.log(response);
         setTrends(response.data.trends);
       } catch (error) {

@@ -9,9 +9,7 @@ export default function News() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(
-          "https://podcastwe.vercel.app/api/news"
-        );
+        const response = await axios.get("/api/news");
         console.log(response);
         setNews(response.data.news);
       } catch (error) {

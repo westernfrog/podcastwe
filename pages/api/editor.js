@@ -1,6 +1,8 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import remark from "remark";
+import remarkHtml from "remark-html";
 
 export default async function EditorHandler(req, res) {
   const files = fs.readdirSync(path.join("public/posts"));
@@ -13,10 +15,13 @@ export default async function EditorHandler(req, res) {
         "utf-8"
       );
 
-      const { data: frontmatter } = matter(markdownMeta);
+      const { data: frontmatter, content } = matter(markdownMeta);
+      const html = remark().use(remarkHtml).processSync(content).toString();
+
       return {
         slug,
         frontmatter,
+        html,
       };
     })
     .filter(
