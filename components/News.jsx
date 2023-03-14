@@ -22,25 +22,6 @@ export default function News(props) {
           </div>
         </div>
         <div className="row align-items-stretch g-4 py-5">
-          {props.posts.map((newsItem, index) =>
-            index === 1 ? (
-              <PodCastCard
-                key={index}
-                id={index}
-                col={8}
-                title={newsItem.title}
-                desc={newsItem.excerpt}
-              />
-            ) : (
-              <PodCastCard
-                key={index}
-                id={index}
-                col={4}
-                title={newsItem.title}
-                desc={newsItem.excerpt}
-              />
-            )
-          )}
           {props.posts.map((post, index) =>
             index === 1 ? (
               <PodCastCard
