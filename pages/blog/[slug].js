@@ -46,17 +46,6 @@ export default function PostPage({ frontmatter: { title, excerpt }, content }) {
               />
             )}
           </Card.Body>
-          <Card.Footer
-            css={{
-              position: "absolute",
-              bottom: 0,
-              zIndex: 1,
-            }}
-          >
-            <Text size={18} color="#ffffffAA" className="col-5 text-shadow-3">
-              {excerpt}
-            </Text>
-          </Card.Footer>
         </Card>
         <div
           className="my-5"
