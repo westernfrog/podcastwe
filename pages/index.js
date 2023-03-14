@@ -3,24 +3,13 @@ import path from "path";
 import matter from "gray-matter";
 import Editor from "@/components/Editor";
 import Overview from "@/components/Overview";
-import PodCastCard from "@/components/PodCastCard";
 
-export default function Home({ posts }) {
-  console.log(posts);
+export default function Home({ editorPickPosts }) {
+  console.log(editorPickPosts);
   return (
     <>
       <Overview />
-      <Editor url="" title="Podcast" excerpt={"ksk"} />
-      {posts.map((editor, index) => (
-        <PodCastCard
-          key={index}
-          id={index}
-          col={4}
-          url={editor.frontmatter.slug}
-          title={editor.frontmatter.title}
-          desc={editor.frontmatter.excerpt}
-        />
-      ))}
+      <Editor posts={editorPickPosts} />
     </>
   );
 }
@@ -43,9 +32,26 @@ export async function getStaticProps() {
     };
   });
 
+  const trendingPosts = posts.filter(
+    (trends) =>
+      trends.frontmatter.tags && trends.frontmatter.tags.includes("trends")
+  );
+
+  const editorPickPosts = posts.filter(
+    (editor) =>
+      editor.frontmatter.tags &&
+      editor.frontmatter.tags.includes("editor's pick")
+  );
+
+  const newsPosts = posts.filter(
+    (news) => news.frontmatter.tags && news.frontmatter.tags.includes("news")
+  );
+
   return {
     props: {
-      posts,
+      trendingPosts,
+      editorPickPosts,
+      newsPosts,
     },
   };
 }

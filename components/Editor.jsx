@@ -22,12 +22,16 @@ export default function Editor(props) {
           </div>
         </div>
         <div className="row align-items-stretch g-4 py-5">
-          <PodCastCard
-            col={4}
-            url={props.url}
-            title={props.title}
-            desc={props.excerpt}
-          />
+          {props.posts.map((post, index) => (
+            <PodCastCard
+              key={index}
+              id={post.frontmatter.title}
+              col={4}
+              url={post.slug}
+              title={post.frontmatter.title}
+              desc={post.frontmatter.excerpt}
+            />
+          ))}
         </div>
       </div>
     </>
