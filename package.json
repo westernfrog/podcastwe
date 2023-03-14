@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@next/font": "13.2.4",
+    "@nextui-org/react": "^1.0.0-beta.12",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "gray-matter": "^4.0.3",
+    "marked": "^4.2.12",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
