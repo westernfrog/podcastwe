@@ -3,12 +3,15 @@ import path from "path";
 import matter from "gray-matter";
 import Editor from "@/components/Editor";
 import Overview from "@/components/Overview";
+import News from "@/components/News";
+import Trending from "@/components/Trending";
 
-export default function Home({ editorPickPosts }) {
-  console.log(editorPickPosts);
+export default function Home({ editorPickPosts, newsPosts, trendingPosts }) {
   return (
     <>
       <Overview />
+      <News posts={newsPosts} />
+      <Trending posts={trendingPosts} />
       <Editor posts={editorPickPosts} />
     </>
   );
