@@ -47,7 +47,7 @@ export default function PodCastCard(props) {
   if (!photoUrl) {
     return (
       <Grid sm={6} md={props.col} className="g-4">
-        <Link href={`/blog/${props.url}`}>
+        <Link href={`/blog/${props.url}`} className="w-100">
           <Card
             onMouseEnter={handleHover}
             onMouseLeave={handleLeave}
