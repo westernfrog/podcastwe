@@ -18,7 +18,7 @@ export default function Overview() {
       if (width <= 768) {
         setClassName("w-100 pic3 rounded-left");
       } else {
-        setClassName("w-100 pic3 rounded");
+        setClassName("w-100 pic3 rounded-7");
       }
     };
     window.addEventListener("resize", handleResize);

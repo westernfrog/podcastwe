@@ -5,12 +5,14 @@ import Editor from "@/components/Editor";
 import Overview from "@/components/Overview";
 import News from "@/components/News";
 import Trending from "@/components/Trending";
+import Newsletter from "@/components/Newsletter";
 
 export default function Home({ editorPickPosts, newsPosts, trendingPosts }) {
   return (
     <>
       <Overview />
       <News posts={newsPosts} />
+      <Newsletter />
       <Trending posts={trendingPosts} />
       <Editor posts={editorPickPosts} />
     </>
