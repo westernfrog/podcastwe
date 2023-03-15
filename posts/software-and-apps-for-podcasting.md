@@ -17,4 +17,4 @@ tags:
 1. Alitu (web-based app)
 1. Ferrite (for iOS)
 
-<p style="font-size:17px"> It is important to choose a software or app that fits your budget and technical needs, and offers the features you need to produce high-quality podcasts.</p>
+<p class="text-md">It is important to choose a software or app that fits your budget and technical needs, and offers the features you need to produce high-quality podcasts.</p>

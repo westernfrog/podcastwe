@@ -16,12 +16,19 @@ body {
     backdrop-filter: none;
   }
 }
+
 ul,
 ol {
   padding-left: 0 !important;
-  color: #fff;
+  color: #6c757d;
 }
-li {
+.text-md {
+  font-size: 17px;
+  font-weight: 400;
+  color: #6c757d;
+}
+li,
+li p {
   font-size: 17px;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
