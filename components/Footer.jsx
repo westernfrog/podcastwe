@@ -40,7 +40,7 @@ export default function Footer() {
                 </li>
                 <li className="nav-item mb-2">
                   <Link href="/genre" className="nav-link p-0 text-muted mx-0">
-                    Genre
+                    Latest
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
