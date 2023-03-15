@@ -19,13 +19,13 @@ export default function Home({ editorPickPosts, newsPosts, trendingPosts }) {
   );
 }
 export async function getStaticProps() {
-  const files = fs.readdirSync(path.join("public/posts"));
+  const files = fs.readdirSync(path.join("posts"));
 
   const posts = files.map((filename) => {
     const slug = filename.replace(".md", "");
 
     const markdownWithMeta = fs.readFileSync(
-      path.join("public/posts", filename),
+      path.join("posts", filename),
       "utf-8"
     );
 

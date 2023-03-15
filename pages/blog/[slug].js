@@ -48,7 +48,7 @@ export default function PostPage({ frontmatter: { title, excerpt }, content }) {
           </Card.Body>
         </Card>
         <div
-          className="my-5"
+          className="my-5 pb-5 text-white"
           dangerouslySetInnerHTML={{ __html: marked(content) }}
         ></div>
       </div>
@@ -57,7 +57,7 @@ export default function PostPage({ frontmatter: { title, excerpt }, content }) {
 }
 
 export async function getStaticPaths() {
-  const files = fs.readdirSync(path.join("public/posts"));
+  const files = fs.readdirSync(path.join("posts"));
 
   const paths = files.map((filename) => ({
     params: {
@@ -73,7 +73,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const markdownWithMeta = fs.readFileSync(
-    path.join("public/posts", slug + ".md"),
+    path.join("posts", slug + ".md"),
     "utf-8"
   );
   const { data: frontmatter, content } = matter(markdownWithMeta);
