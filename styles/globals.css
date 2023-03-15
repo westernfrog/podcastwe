@@ -16,6 +16,16 @@ body {
     backdrop-filter: none;
   }
 }
+ul,
+ol {
+  padding-left: 0 !important;
+  color: #fff;
+}
+li {
+  font-size: 17px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+}
 
 .fs-7,
 .nav-link,
