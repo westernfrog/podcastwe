@@ -20,12 +20,13 @@ body {
 ul,
 ol {
   padding-left: 0 !important;
-  color: #6c757d;
+  color: #fff;
+  opacity: 0.5;
 }
 .text-md {
   font-size: 17px;
   font-weight: 400;
-  color: #6c757d;
+  opacity: 0.5;
 }
 li,
 li p {
