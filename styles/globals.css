@@ -21,12 +21,12 @@ ul,
 ol {
   padding-left: 0 !important;
   color: #fff;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .text-md {
   font-size: 17px;
   font-weight: 400;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 li,
 li p {
