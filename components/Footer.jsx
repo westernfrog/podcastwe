@@ -34,24 +34,33 @@ export default function Footer() {
               <h6 className="text-uppercase fs-7 text-white">Navigation</h6>
               <ul className="nav flex-column mx-0">
                 <li className="nav-item mb-2">
-                  <Link href="/" className="nav-link p-0 text-muted mx-0">
+                  <Link
+                    href="/"
+                    className="nav-link p-0 text-muted fw-bold mx-0"
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link href="/genre" className="nav-link p-0 text-muted mx-0">
+                  <Link
+                    href="/genre"
+                    className="nav-link p-0 text-muted fw-bold mx-0"
+                  >
                     Latest
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
-                  <Link href="/news" className="nav-link p-0 text-muted mx-0">
+                  <Link
+                    href="/news"
+                    className="nav-link p-0 text-muted fw-bold mx-0"
+                  >
                     News
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
                   <Link
                     href="/trending"
-                    className="nav-link p-0 text-muted mx-0"
+                    className="nav-link p-0 text-muted fw-bold mx-0"
                   >
                     Trending
                   </Link>
@@ -63,13 +72,16 @@ export default function Footer() {
               <h6 className="text-uppercase fs-7 text-white">Company</h6>
               <ul className="nav flex-column mx-0">
                 <li className="nav-item mb-2">
-                  <Link href="/about" className="nav-link p-0 text-muted mx-0">
+                  <Link
+                    href="/about"
+                    className="nav-link p-0 text-muted fw-bold mx-0"
+                  >
                     About us
                   </Link>
                 </li>
                 <li className="nav-item mb-2">
                   <p
-                    className="nav-link p-0 text-muted mx-0"
+                    className="nav-link p-0 text-muted fw-bold mx-0"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                     style={{ cursor: "pointer" }}
@@ -79,7 +91,7 @@ export default function Footer() {
                 </li>
                 <li className="nav-item mb-2">
                   <p
-                    className="nav-link p-0 text-muted mx-0"
+                    className="nav-link p-0 text-muted fw-bold mx-0"
                     onClick={() => setPrivacy(true)}
                     style={{ cursor: "pointer" }}
                   >
@@ -193,7 +205,7 @@ export default function Footer() {
                 </li>
                 <li className="nav-item mb-2">
                   <p
-                    className="nav-link p-0 text-muted mx-0"
+                    className="nav-link p-0 text-muted fw-bold mx-0"
                     onClick={() => setTerms(true)}
                     style={{ cursor: "pointer" }}
                   >

@@ -63,8 +63,31 @@ export default function Contact() {
             </div>
             <div className="modal-body text-dm">
               <form>
-                <div className="mb-3 d-grid"></div>
                 <div className="mb-3 d-grid">
+                  <div className="form-floating">
+                    <input
+                      type="text"
+                      name="name"
+                      className="form-control rounded-6 shadow-sm"
+                      id="floatingInput"
+                      value={name}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="floatingInput">Your Name</label>
+                  </div>
+                </div>
+                <div className="mb-3 d-grid">
+                  <div className="form-floating">
+                    <input
+                      type="email"
+                      name="email"
+                      className="form-control rounded-6 shadow-sm"
+                      id="floatingInput"
+                      value={email}
+                      onChange={handleChange}
+                    />
+                    <label htmlFor="floatingInput">Email address</label>
+                  </div>
                   <div
                     className={`${
                       emailError ? "d-block" : "d-none"
@@ -73,7 +96,20 @@ export default function Contact() {
                     Please enter a valid email address.
                   </div>
                 </div>
-                <div className="mb-3 d-grid"></div>
+                <div className="mb-3 d-grid">
+                  <div className="form-floating">
+                    <textarea
+                      name="message"
+                      className="form-control rounded-6 shadow-sm"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea2"
+                      value={message}
+                      style={{ height: "100px", resize: "none" }}
+                      onChange={handleChange}
+                    ></textarea>
+                    <label htmlFor="floatingTextarea2">Your Message</label>
+                  </div>
+                </div>
               </form>
             </div>
             <div className="modal-footer text-dm border-0">

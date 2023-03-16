@@ -90,7 +90,7 @@ An audio interface can be used in podcasting to improve the sound quality of rec
 1. **Flexibility:** An audio interface can be used with a variety of microphones and other audio sources, allowing you to use the tools that best suit your needs.
 1. **Ease of use:** An audio interface can simplify the process of recording high-quality audio, providing a single, easy-to-use interface for controlling inputs, outputs, and levels.
 
-<p class=text-md>
+<p className=text-md>
 There are many different audio interfaces available for podcasting, ranging from compact, portable models to more feature-rich models that offer multiple inputs and advanced monitoring options. When choosing an audio interface for your podcasting setup, it's important to consider your budget, the type of content you plan to produce, and your recording environment.
 </p>
 

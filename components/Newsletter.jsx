@@ -38,17 +38,27 @@ export default function Newsletter() {
             <p className="card-text fs-5 mb-0 text-poppins text-shadow-3">
               Subscribe to our NewsLetter
             </p>
-            <div className="input-group">
+            <div className="form-floating mb-2 text-black">
               <input
                 type="email"
-                className="form-control rounded-5 shadow border border-2"
-                placeholder="Your Email"
+                className="form-control rounded-6 shadow opacity-75"
+                id="floatingInput"
+                placeholder="john@doe.in"
                 style={{ boxShadow: "none" }}
               />
-              <Button flat color="secondary" auto className="rounded-5">
-                <i className="fa-solid fa-paper-plane"></i>
-              </Button>
+              <label htmlFor="floatingInput" className="fs-7 text-shadow-3">
+                Email address
+              </label>
             </div>
+            <Button
+              flat
+              color="secondary"
+              auto
+              className="rounded-5 w-100 text-shadow-3 opacity-75"
+            >
+              Subscribe
+              <i className="fa-solid fa-paper-plane ms-2"></i>
+            </Button>
           </div>
         </div>
       </div>
