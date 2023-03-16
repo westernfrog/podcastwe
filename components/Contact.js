@@ -99,15 +99,15 @@ export default function Contact() {
                 <div className="mb-3 d-grid">
                   <div className="form-floating">
                     <textarea
+                      type="text"
                       name="message"
                       className="form-control rounded-6 shadow-sm"
-                      placeholder="Leave a comment here"
-                      id="floatingTextarea2"
+                      id="floatingInput"
                       value={message}
-                      style={{ height: "100px", resize: "none" }}
                       onChange={handleChange}
-                    ></textarea>
-                    <label htmlFor="floatingTextarea2">Your Message</label>
+                      style={{ height: "100px", resize: "none" }}
+                    />
+                    <label htmlFor="floatingInput">Your Message</label>
                   </div>
                 </div>
               </form>

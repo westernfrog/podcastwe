@@ -1,29 +1,10 @@
-import { useInput, Button } from "@nextui-org/react";
-import { useMemo } from "react";
+import { Button } from "@nextui-org/react";
 
 export default function Newsletter() {
-  const { value, reset, bindings } = useInput("");
-
-  const validateEmail = (value) => {
-    return value.match(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i);
-  };
-
-  const helper = useMemo(() => {
-    if (!value)
-      return {
-        text: "",
-        color: "",
-      };
-    const isValid = validateEmail(value);
-    return {
-      text: isValid ? "Correct email" : "Enter a valid email",
-      color: isValid ? "success" : "error",
-    };
-  }, [value]);
   return (
     <div className="container text-dm my-5 pb-5 text-light">
       <div
-        className="card rounded-5 p-3 p-lg-5 border-0 shadow image"
+        className="card rounded-6 p-3 p-lg-5 border-0 shadow image"
         style={{ backgroundColor: "#111" }}
       >
         <div className="card-body">
