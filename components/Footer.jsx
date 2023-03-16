@@ -123,7 +123,7 @@ export default function Footer() {
                           share personal information that we obtain from
                           visitors to our podcast blogging website.
                         </p>
-                        <ul className="lh-lg text-dm ms-0 ps-0">
+                        <ul className="lh-lg text-dm ms-0 ps-0 text-black">
                           <li className="fs-5 fw-bold" id="1">
                             Information Collection and Use
                           </li>
@@ -238,7 +238,7 @@ export default function Footer() {
                           you use podcastwe.com, you&apos;re agreeing to these
                           terms.
                         </p>
-                        <ul className="lh-lg text-dm ms-0 ps-0">
+                        <ul className="lh-lg text-dm ms-0 ps-0 text-black">
                           <li className="fs-5 fw-bold" id="1">
                             Intellectual Property
                           </li>

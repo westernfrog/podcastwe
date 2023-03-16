@@ -120,7 +120,7 @@ export default function PodCastCard(props) {
                   transform="uppercase"
                   color="#9E9E9E"
                 >
-                  New
+                  {props.alt}
                 </Text>
                 <Text h3 color="white" className="text-shadow-3">
                   {props.title}

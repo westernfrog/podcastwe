@@ -27,6 +27,7 @@ export default function Trending(props) {
               key={index}
               id={post.frontmatter.title}
               col={4}
+              alt={"Trends"}
               url={post.slug}
               title={post.frontmatter.title}
               desc={post.frontmatter.excerpt}

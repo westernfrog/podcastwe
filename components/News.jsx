@@ -28,6 +28,7 @@ export default function News(props) {
                 key={index}
                 id={post.frontmatter.title}
                 col={8}
+                alt={"New"}
                 url={post.slug}
                 title={post.frontmatter.title}
                 desc={post.frontmatter.excerpt}
@@ -37,6 +38,7 @@ export default function News(props) {
                 key={index}
                 id={post.frontmatter.title}
                 col={4}
+                alt={"New"}
                 url={post.slug}
                 title={post.frontmatter.title}
                 desc={post.frontmatter.excerpt}
