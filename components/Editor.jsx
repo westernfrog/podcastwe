@@ -18,7 +18,7 @@ export default function Editor(props) {
               comprehensive coverage and insightful analysis of the top stories
               from around the world.
             </p>
-            <Buttons url="contact" html="See More" />
+            <Buttons url="latest" html="See More" />
           </div>
         </div>
         <div className="row align-items-stretch g-4 py-5">
