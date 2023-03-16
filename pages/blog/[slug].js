@@ -5,7 +5,7 @@ import { marked } from "marked";
 import { useEffect, useState } from "react";
 import { Card, Col, Text } from "@nextui-org/react";
 
-export default function PostPage({ frontmatter: { title, excerpt }, content }) {
+export default function PostPage({ frontmatter: { title }, content }) {
   const [myItem, setMyItem] = useState(null);
 
   useEffect(() => {

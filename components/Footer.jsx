@@ -43,7 +43,7 @@ export default function Footer() {
                 </li>
                 <li className="nav-item mb-2">
                   <Link
-                    href="/genre"
+                    href="/latest"
                     className="nav-link p-0 text-muted fw-bold mx-0"
                   >
                     Latest
