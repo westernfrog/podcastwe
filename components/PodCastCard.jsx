@@ -149,7 +149,7 @@ export default function PodCastCard(props) {
               }}
             >
               <Col>
-                <Text color="#d1d1d1" size={14}>
+                <Text color="#d1d1d1" size={14} className="m-0">
                   {props.desc}
                 </Text>
               </Col>

@@ -4,13 +4,21 @@ tags:
   - latest
 ---
 
-#### Wireless System For On location Recordings
+#### Digital Recorder
 
 <p class="text-md">
-A wireless system for on-location recording is a device used to capture audio in remote locations, away from the studio. It typically consists of a wireless microphone, a portable digital audio recorder, and a wireless transmitter and receiver system. This type of setup allows the podcast host to move around freely while recording audio, which is especially useful for interviews or field recordings. Some of the popular wireless systems for on-location recording include the Sennheiser G3, the RodeLink, and the Shure BLX.</p>
+A digital recorder is a device used to capture audio in a digital format for later use, such as editing and processing. Digital recorders can range from handheld units to larger multi-channel devices, and are commonly used in podcasting to record interviews, audio diaries, and other audio content. They can be especially useful in podcasting due to their ease of use, portability, and ability to record high-quality audio, making them an important tool in the podcasting production process.</p>
 
 <br>
 
-#### Some Best Wireless On Location Recording System:
+#### Different Kinds Of Digital Recorder :
 
-<p class="text-md">When it comes to on-location recording for podcasting, the best system would depend on various factors such as budget, ease of use, sound quality, range, and compatibility with other equipment. Some popular and well-regarded brands for on-location recording systems include Sennheiser, Shure, Rode, and Audio-Technica. It's advisable to do thorough research and read customer reviews to determine which system would best suit your needs.</p>
+1. Zoom H1n Handy Recorder
+1. Tascam DR-05X Portable Digital Recorder
+1. Sony ICD-TX800 Digital Voice Recorder
+1. Olympus LS-100 Multi-Track Linear PCM Recorder
+1. Marantz Professional PMD-661MKII Portable Recorder
+1. H4n Pro Zoom Handy Recorder
+1. Boss BR-800 Portable Digital Recorder
+
+<p class="text-md">Note that the best digital recorder for you will depend on your specific needs, budget, and the type of podcast you produce.</p>

@@ -3,7 +3,7 @@ import PodCastCard from "./PodCastCard";
 export default function Latest(props) {
   return (
     <>
-      <div className="container">
+      <div className="container mb-5">
         <div className="row align-items-stretch g-4 py-3">
           {props.posts.map((post, index) => (
             <PodCastCard
