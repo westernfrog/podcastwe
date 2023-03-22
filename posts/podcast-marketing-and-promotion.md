@@ -7,7 +7,7 @@ tags:
 
 #### Podcast Marketing And Promotion
 
-<p class="text-md">
+<p className="text-md">
 There are many ways to promote and market your podcast, and the best approach will depend on your specific goals and target audience. Here are some of the most effective strategies for promoting your podcast:
 </p>
 
@@ -20,7 +20,7 @@ There are many ways to promote and market your podcast, and the best approach wi
 1. **Create show notes:** Provide detailed show notes for each episode, which can help to drive traffic to your website and engage your audience.
 1. **Utilize email marketing:** Build an email list of your listeners and use it to promote new episodes and special events, as well as to share behind-the-scenes content and other exclusive updates.
 
-<p class="text-md">
+<p className="text-md">
 These are just a few of the many strategies you can use to promote and market your podcast. By experimenting with different tactics and refining your approach over time, you can find the methods that work best for your show and grow your audience.
 </p>
 
@@ -28,7 +28,7 @@ These are just a few of the many strategies you can use to promote and market yo
 
 #### Pro Tip For Beginners Starting new Podcast:
 
-<p class="text-md">
+<p className="text-md">
 If you are just starting out, you will need some basic podcast equipment and technology to produce quality recordings .To start ,you’ll need digital audio recorder ,such as Zoom or Tascam, Which will help you capture professional-sounding audio. you’ll also need a microphone, such as a condenser or dynamic mic, Which can pick up your voice and any other sounds in the room, Additionally ,you should consider investing in an audio interface, Which is a device that connects your microphone to your computer and helps you record audio with higher fidelity. Finally you’ll need recording software ,such as Audacity or Pro Tools, Which will allow you to edit and mix your podcast .Other useful Pieces of equipment and technology include headphones pop filter ,and a shock mount for your microphone. Having these items will give you everything you need to get started creating quality podcast.
 </p>
 

@@ -7,7 +7,7 @@ tags:
 
 #### Podcast Hosting And Distribution:
 
-<p class="text-md">
+<p className="text-md">
 Podcast hosting refers to the service that stores and serves your audio files to the listeners. It is responsible for handling the storage, bandwidth, and distribution of your podcast. Some popular podcast hosting services are:
 </p>
 
@@ -19,7 +19,7 @@ Podcast hosting refers to the service that stores and serves your audio files to
 1. Soundcloud
 1. Simplecast
 
-<p class="text-md">
+<p className="text-md">
 Podcast distribution refers to the process of making your podcast available to listeners through different platforms and directories. Some of the popular podcast directories are:
 </p>
 
@@ -31,7 +31,7 @@ Podcast distribution refers to the process of making your podcast available to l
 1.  Pocket Casts
 1.  TuneIn
 
-<p class="text-md">
+<p className="text-md">
 By hosting your podcast with a reliable hosting service and distributing it through multiple directories, you can reach a wider audience and grow your podcast.
 </p>
 

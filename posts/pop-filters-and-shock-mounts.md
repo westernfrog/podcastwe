@@ -6,7 +6,7 @@ tags:
 
 #### Pop Filters
 
-<p class="text-md">
+<p className="text-md">
 A pop filter, also known as a windscreen or a pop shield, is a device that is used to reduce the impact of plosive sounds in vocal recordings. Plosive sounds are created when a speaker says a word that starts with a hard "p" or "b" sound, causing a burst of air to hit the microphone and create a popping or thumping noise.
 
 A pop filter works by creating a physical barrier between the speaker's mouth and the microphone. The barrier absorbs or diffuses the burst of air from the plosives, preventing it from hitting the microphone directly and creating unwanted noise.
@@ -19,11 +19,11 @@ Using a pop filter is an important step in achieving high-quality audio recordin
 
 #### Pop Filters And Shock Mounts Are?
 
-<p class="text-md">A pop filter is a device attached to the end of a microphone that helps reduce plosive sounds (sudden bursts of air from pronunciation of words starting with "p" or "b") in recorded speech. A shock mount is a type of microphone holder that helps reduce noise from vibrations, such as handling noise or floor vibrations, that can be transmitted through the microphone stand to the microphone. Both pop filters and shock mounts are commonly used in podcasting to improve audio quality.</p>
+<p className="text-md">A pop filter is a device attached to the end of a microphone that helps reduce plosive sounds (sudden bursts of air from pronunciation of words starting with "p" or "b") in recorded speech. A shock mount is a type of microphone holder that helps reduce noise from vibrations, such as handling noise or floor vibrations, that can be transmitted through the microphone stand to the microphone. Both pop filters and shock mounts are commonly used in podcasting to improve audio quality.</p>
 
 #### Best Pop Filters Available In Market:
 
-<p class="text-md">
+<p className="text-md">
 Here are some of the best pop filters that are commonly used for podcasting and vocal recording:
 </p>
 
@@ -33,6 +33,6 @@ Here are some of the best pop filters that are commonly used for podcasting and 
 1. **Nady MPF-6 6-Inch Pop Filter:** The Nady MPF-6 is a versatile pop filter that features a 6-inch diameter metal frame and a replaceable foam windscreen. It's easy to set up and use, and its compact size makes it ideal for use in home studios or small recording setups.
 1. **Auphonix Professional Pop Filter:** This pop filter features a 6-inch diameter metal frame and a double-layer nylon mesh screen. It's adjustable and easy to set up, and its sturdy construction makes it ideal for use in professional recording studios.
 
-<p class="text-md">
+<p className="text-md">
 These are just a few of the many pop filters available on the market. When selecting a pop filter for your recording setup, it's important to consider your specific needs and budget, and to look for a pop filter that is compatible with your microphone and recording setup.
 </p>

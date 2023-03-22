@@ -7,7 +7,7 @@ export default function LatestListsCard(props) {
   return (
     <>
       <li
-        class="list-group-item ps-0 text-white"
+        className="list-group-item ps-0 text-white"
         style={{ backgroundColor: "inherit" }}
       >
         <Link href={`blog/${props.url}`} className="text-decoration-none">

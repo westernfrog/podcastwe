@@ -70,7 +70,9 @@ h6,
   margin: 0 10px;
   color: #fff;
 }
-
+.bg-shadow {
+  box-shadow: 0 10rem 7rem rgba(0, 0, 0, 0.15);
+}
 .rounded-7 {
   border-radius: 50px;
 }

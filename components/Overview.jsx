@@ -8,17 +8,15 @@ import image3 from "../public/image3.jpg";
 import LatestListsCard from "./LatestListsCard";
 
 export default function Overview(props) {
-  const [className, setClassName] = useState(
-    "d-flex align-items-center w-100 pic3 shadow"
-  );
+  const [className, setClassName] = useState("");
 
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
       if (width <= 768) {
-        setClassName("w-100 pic3 rounded-left");
+        setClassName("rounded-6");
       } else {
-        setClassName("w-100 pic3 rounded-7");
+        setClassName("rounded-7");
       }
     };
     window.addEventListener("resize", handleResize);
@@ -73,7 +71,7 @@ export default function Overview(props) {
               <Image
                 src={image3}
                 className="mr-3 col-4"
-                alt="pic3"
+                alt="pic4"
                 width={500}
                 height={500}
                 loading="lazy"
@@ -114,7 +112,7 @@ export default function Overview(props) {
             >
               <div className="row-cols-1">
                 <div className="col pe-0 pe-lg-5 bg-inherit">
-                  <ul class="list-group list-group-flush mx-0">
+                  <ul className="list-group list-group-flush mx-0">
                     {props.posts.map((post, index) => (
                       <LatestListsCard
                         key={index}
@@ -133,7 +131,7 @@ export default function Overview(props) {
 
           <Spacer y={3} x={0} />
           <div
-            className={`${className} my-5 p-5`}
+            className={`${className} my-5 p-5 d-flex align-items-center w-100 pic4 bg-shadow`}
             style={{ height: 500 }}
             loading="lazy"
           ></div>

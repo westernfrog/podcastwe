@@ -6,7 +6,7 @@ tags:
 
 #### Podcast Audience Growth And Engagement:
 
-<p class="text-md">
+<p className="text-md">
 Podcast audience growth and engagement refer to increasing the number of listeners and actively involving them with the content of a podcast. Effective methods to grow and engage the audience include:</p>
 
 1. Consistent and high-quality content production.
@@ -17,14 +17,14 @@ Podcast audience growth and engagement refer to increasing the number of listene
 
 1. Using relevant keywords, tags and descriptions for easy discovery.
 
-<p class="text-md">
+<p className="text-md">
 Ultimately, building a relationship with the audience by providing value and catering to their interests is key to growing and engaging a podcast audience.</p>
 
 <br>
 
 #### Steps Involved In A Podcast Audience Growth And Engagement:
 
-<p class="text-md">Growing your podcast audience requires a combination of various strategies, including:</p>
+<p className="text-md">Growing your podcast audience requires a combination of various strategies, including:</p>
 
 1. **Consistency** - publishing episodes regularly to keep listeners engaged.
 1. **Promotion** - promoting your podcast on social media, email marketing, and other channels to reach new listeners.

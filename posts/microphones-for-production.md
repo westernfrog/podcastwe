@@ -19,6 +19,6 @@ tags:
 
 1. **Shotgun Microphones:** Great for capturing audio from a specific direction, ideal for outdoor recordings.
 
-<p class="text-md">
+<p className="text-md">
 Ultimately, the type of microphone to choose depends on the type of podcast, the budget, and the desired quality.
 </p>

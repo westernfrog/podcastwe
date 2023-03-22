@@ -4,7 +4,7 @@ export default function Newsletter() {
   return (
     <div className="container text-dm my-5 pb-5 text-light">
       <div
-        className="card rounded-6 p-3 p-lg-5 border-0 shadow image"
+        className="card rounded-6 p-3 p-lg-5 border-0 bg-shadow image"
         style={{ backgroundColor: "#111" }}
       >
         <div className="card-body">
@@ -27,7 +27,7 @@ export default function Newsletter() {
                 placeholder="john@doe.in"
                 style={{ boxShadow: "none", opacity: "0.9" }}
               />
-              <label htmlFor="floatingInput" className="fs-7 text-shadow-3">
+              <label htmlFor="floatingInput" className="fs-7 text-muted">
                 Email address
               </label>
             </div>
