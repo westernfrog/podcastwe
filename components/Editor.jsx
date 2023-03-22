@@ -1,11 +1,10 @@
-import NewsListsCard from "./NewsListsCard";
+import PodCastCard from "./PodCastCard";
 import Buttons from "./Buttons";
-import EditorListsCard from "./EditorListsCard";
 
 export default function Editor(props) {
   return (
     <>
-      <div className="container my-5 py-5">
+      <div className="container mt-5 pt-5">
         <div className="row d-flex align-items-top justify-content-between">
           <div className="col-md-6">
             <h1 className="display-2 text-uppercase text-white">
@@ -24,9 +23,10 @@ export default function Editor(props) {
         </div>
         <div className="row align-items-stretch g-4 py-5">
           {props.posts.map((post, index) => (
-            <EditorListsCard
+            <PodCastCard
               key={index}
               id={post.frontmatter.title}
+              col={4}
               url={post.slug}
               title={post.frontmatter.title}
               desc={post.frontmatter.excerpt}

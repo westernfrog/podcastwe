@@ -2,7 +2,7 @@ import { Card, Col, Grid, Text, Loading } from "@nextui-org/react";
 import Link from "next/link";
 import { useRandomPodcastPhoto } from "./GetRandomPhotos";
 
-export default function NewsListsCard(props) {
+export default function PodCastCard(props) {
   const { showDesc, photoUrl, handleHover, handleLeave } =
     useRandomPodcastPhoto({ id: props.id });
 

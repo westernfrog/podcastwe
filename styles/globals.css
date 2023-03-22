@@ -6,6 +6,9 @@ body {
 .bg-grey {
   background: radial-gradient(circle at top right, #111, #000000);
 }
+.bg-contact {
+  background: radial-gradient(circle at top right, #26292b40, #16181a50);
+}
 .bg-nav {
   backdrop-filter: saturate(180%) blur(20px);
 }
@@ -78,6 +81,19 @@ h6,
 a {
   text-decoration: none;
 }
+.rounded-lg-bottom {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+}
+.rounded-md-bottom {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
 .pic1 {
   background-image: url("../public/image1.jpg");
   background-size: cover;

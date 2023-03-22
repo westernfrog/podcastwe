@@ -1,5 +1,5 @@
 import Buttons from "./Buttons";
-import NewsListsCard from "./NewsListsCard";
+import PodCastCard from "./PodCastCard";
 
 export default function Trending(props) {
   return (
@@ -23,7 +23,7 @@ export default function Trending(props) {
         </div>
         <div className="row align-items-stretch g-4 py-5">
           {props.posts.map((post, index) => (
-            <NewsListsCard
+            <PodCastCard
               key={index}
               id={post.frontmatter.title}
               col={4}

@@ -1,5 +1,5 @@
 import Buttons from "./Buttons";
-import NewsListsCard from "./NewsListsCard";
+import PodCastCard from "./PodCastCard";
 
 export default function News(props) {
   return (
@@ -24,7 +24,7 @@ export default function News(props) {
         <div className="row align-items-stretch g-4 py-5">
           {props.posts.map((post, index) =>
             index === 1 ? (
-              <NewsListsCard
+              <PodCastCard
                 key={index}
                 id={post.frontmatter.title}
                 col={8}
@@ -34,7 +34,7 @@ export default function News(props) {
                 desc={post.frontmatter.excerpt}
               />
             ) : (
-              <NewsListsCard
+              <PodCastCard
                 key={index}
                 id={post.frontmatter.title}
                 col={4}

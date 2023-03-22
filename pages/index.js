@@ -6,6 +6,7 @@ import Overview from "@/components/Overview";
 import News from "@/components/News";
 import Trending from "@/components/Trending";
 import Newsletter from "@/components/Newsletter";
+import ContactCard from "@/components/ContactCard";
 
 export default function Home({
   editorPickPosts,
@@ -20,6 +21,7 @@ export default function Home({
       <Newsletter />
       <Trending posts={trendingPosts} />
       <Editor posts={editorPickPosts} />
+      <ContactCard />
     </>
   );
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Buttons(props) {
   return (
     <>
-      <div className="col-lg-4 d-grid">
+      <div className={`col-lg-4 d-grid ${props.className}`}>
         <Link href={"/" + props.url} className="d-grid text-decoration-none">
           <button className="btn btn-outline-light btn-sm btn-shrink my-4 py-2 rounded-pill shadow-sm text-dm">
             {props.html}
