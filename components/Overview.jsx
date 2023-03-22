@@ -1,13 +1,13 @@
 import Support from "./Support";
-import TopPodcastCard from "./TopPodcastCard";
 import { useState, useEffect } from "react";
 import { Spacer } from "@nextui-org/react";
 import Image from "next/image";
 import image1 from "../public/image1.jpg";
 import image2 from "../public/image2.jpg";
 import image3 from "../public/image3.jpg";
+import LatestListsCard from "./LatestListsCard";
 
-export default function Overview() {
+export default function Overview(props) {
   const [className, setClassName] = useState(
     "d-flex align-items-center w-100 pic3 shadow"
   );
@@ -106,18 +106,27 @@ export default function Overview() {
                 zIndex: "1",
               }}
             >
-              Top Podcast of the week
+              Latest Posts of the week
             </h1>
             <div
-              className="text-md-start overflow-auto pe-3"
+              className="text-md-start overflow-auto pe-2"
               style={{ maxHeight: "190px" }}
             >
               <div className="row-cols-1">
-                {topPodcasts.map((podcast, index) => (
-                  <div key={index} className="col pe-0 pe-lg-5 bg-inherit">
-                    <TopPodcastCard link={podcast.link} />
-                  </div>
-                ))}
+                <div className="col pe-0 pe-lg-5 bg-inherit">
+                  <ul class="list-group list-group-flush mx-0">
+                    {props.posts.map((post, index) => (
+                      <LatestListsCard
+                        key={index}
+                        id={post.frontmatter.title}
+                        title={post.frontmatter.title}
+                        tag={"Latest Posts"}
+                        url={post.slug}
+                        order={index + 1}
+                      />
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

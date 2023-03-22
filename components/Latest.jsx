@@ -1,4 +1,4 @@
-import PodCastCard from "./PodCastCard";
+import NewsListsCard from "./NewsListsCard";
 
 export default function Latest(props) {
   return (
@@ -6,7 +6,7 @@ export default function Latest(props) {
       <div className="container mb-5">
         <div className="row align-items-stretch g-4 py-3">
           {props.posts.map((post, index) => (
-            <PodCastCard
+            <NewsListsCard
               key={index}
               id={post.frontmatter.title}
               col={6}

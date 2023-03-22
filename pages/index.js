@@ -7,10 +7,15 @@ import News from "@/components/News";
 import Trending from "@/components/Trending";
 import Newsletter from "@/components/Newsletter";
 
-export default function Home({ editorPickPosts, newsPosts, trendingPosts }) {
+export default function Home({
+  editorPickPosts,
+  newsPosts,
+  trendingPosts,
+  latestPosts,
+}) {
   return (
     <>
-      <Overview />
+      <Overview posts={latestPosts} />
       <News posts={newsPosts} />
       <Newsletter />
       <Trending posts={trendingPosts} />
@@ -52,11 +57,17 @@ export async function getStaticProps() {
     (news) => news.frontmatter.tags && news.frontmatter.tags.includes("news")
   );
 
+  const latestPosts = posts.filter(
+    (latest) =>
+      latest.frontmatter.tags && latest.frontmatter.tags.includes("latest")
+  );
+
   return {
     props: {
       trendingPosts,
       editorPickPosts,
       newsPosts,
+      latestPosts,
     },
   };
 }

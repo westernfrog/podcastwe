@@ -99,7 +99,7 @@ a {
   background-position: center;
 }
 .image {
-  background-image: url("https://source.unsplash.com/random/?music+grey");
+  background-image: url("https://source.unsplash.com/random/?music");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -122,7 +122,8 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
+  height: 3px;
 }
 ::-webkit-scrollbar-track {
   background-color: inherit;

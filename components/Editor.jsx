@@ -1,5 +1,6 @@
-import PodCastCard from "./PodCastCard";
+import NewsListsCard from "./NewsListsCard";
 import Buttons from "./Buttons";
+import EditorListsCard from "./EditorListsCard";
 
 export default function Editor(props) {
   return (
@@ -23,11 +24,9 @@ export default function Editor(props) {
         </div>
         <div className="row align-items-stretch g-4 py-5">
           {props.posts.map((post, index) => (
-            <PodCastCard
+            <EditorListsCard
               key={index}
               id={post.frontmatter.title}
-              col={4}
-              alt={"Editor's Pick"}
               url={post.slug}
               title={post.frontmatter.title}
               desc={post.frontmatter.excerpt}
