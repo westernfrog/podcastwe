@@ -6,7 +6,7 @@ tags:
 
 #### Podcast Industry Trends And Future Developments
 
-<p className="text-md">
+<p style="font-size:17px;opacity:0.8">
 The podcasting industry is rapidly evolving and new trends and developments are emerging every year. Some of the recent industry trends in podcasting include:
 </p>
 
@@ -16,7 +16,7 @@ The podcasting industry is rapidly evolving and new trends and developments are 
 1. **Growth of video podcasts** - while audio podcasts are still the norm, video podcasts are becoming more popular as people look for a more visual and engaging experience.
 1. **Emergence of new revenue streams** - apart from advertising, podcast creators are exploring new revenue streams such as merchandise, memberships and events.
 
-<p className="text-md">
+<p style="font-size:17px;opacity:0.8">
 In conclusion, the future of podcasting looks bright, with new technology and business models emerging that will continue to make it easier to create and distribute podcasts, as well as reach and monetize new audiences.
 </p>
 
@@ -24,7 +24,7 @@ In conclusion, the future of podcasting looks bright, with new technology and bu
 
 #### Few Industry Trends To Follow For the Growth:
 
-<p className="text-md">Some of the current and emerging industry trends in podcasting include:</p>
+<p style="font-size:17px;opacity:0.8">Some of the current and emerging industry trends in podcasting include:</p>
 
 1. Increased diversity and representation in content and hosts
 1. Greater focus on monetization, including brand partnerships and sponsorships
@@ -35,7 +35,7 @@ In conclusion, the future of podcasting looks bright, with new technology and bu
 
 #### Tips And Tricks To Follow To Stand Out From The Crowd:
 
-<p className="text-md">
+<p style="font-size:17px;opacity:0.8">
 To stand out in the ever-emerging era of podcasting, consider the following tips:
 </p>
 

@@ -14,7 +14,7 @@ export default function Overview(props) {
     const handleResize = () => {
       const width = window.innerWidth;
       if (width <= 768) {
-        setClassName("rounded-6");
+        setClassName("rounded-5");
       } else {
         setClassName("rounded-7");
       }
@@ -40,7 +40,7 @@ export default function Overview(props) {
             <div className="media align-items-center d-none">
               <Image
                 src={image1}
-                className="mr-3 col-4"
+                className="mr-3 col-4 bg-shadow"
                 alt="pic1"
                 width={500}
                 height={500}
@@ -49,13 +49,13 @@ export default function Overview(props) {
               />
             </div>
           </div>
-          <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 shadow"></div>
+          <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 bg-shadow"></div>
           <div className="col-sm">
             <span className="align-middle">New</span>
             <div className="media align-items-center d-none">
               <Image
                 src={image2}
-                className="mr-3 col-4"
+                className="mr-3 col-4 bg-shadow"
                 alt="pic2"
                 width={500}
                 height={500}
@@ -64,13 +64,13 @@ export default function Overview(props) {
               />
             </div>
           </div>
-          <div className="col-sm-2 d-lg-block d-none pic3 rounded-pill my-3 shadow"></div>
+          <div className="col-sm-2 d-lg-block d-none pic3 rounded-pill my-3 bg-shadow"></div>
           <div className="col-sm">
             <span className="align-middle">Podcast</span>
             <div className="media align-items-center d-none">
               <Image
                 src={image3}
-                className="mr-3 col-4"
+                className="mr-3 col-4 bg-shadow"
                 alt="pic4"
                 width={500}
                 height={500}
@@ -79,7 +79,7 @@ export default function Overview(props) {
               />
             </div>
           </div>
-          <div className="col-sm-3 d-lg-block d-none pic2 rounded-pill my-3 shadow"></div>
+          <div className="col-sm-3 d-lg-block d-none pic2 rounded-pill my-3 bg-shadow"></div>
           <div className="col-sm">
             <span className="align-middle">Order</span>
           </div>

@@ -5,7 +5,7 @@ tags:
   - editor's pick
 ---
 
-<p className="text-md">There are various formats and styles of podcasts, including:
+<p style="font-size:17px;opacity:0.8">There are various formats and styles of podcasts, including:
 </p>
 
 1. **Interview:** a conversational style with one or more hosts interviewing guests.
@@ -18,5 +18,5 @@ tags:
 1. **Fiction:** audio dramas and storytelling, similar to radio plays.
 1. **Roundtable:** multiple hosts discussing a topic and exchanging ideas.
 
-<p className="text-md">The style and format of a podcast will depend on the goals, target audience, and personal preferences of the hosts and producers.
+<p style="font-size:17px;opacity:0.8">The style and format of a podcast will depend on the goals, target audience, and personal preferences of the hosts and producers.
 </p>
