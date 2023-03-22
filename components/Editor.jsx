@@ -27,6 +27,7 @@ export default function Editor(props) {
               key={index}
               id={post.frontmatter.title}
               col={4}
+              alt={"Editor's Pick"}
               url={post.slug}
               title={post.frontmatter.title}
               desc={post.frontmatter.excerpt}

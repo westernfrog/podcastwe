@@ -19,7 +19,7 @@ export default function ContactCard(params) {
   }, []);
   return (
     <>
-      <div className="container mb-5 pb-5 pic3">
+      <div className="container mt-3 mb-5 pb-5 pic3">
         <Card variant="flat" className={`bg-contact bg-shadow ${className}`}>
           <Card.Body className="my-5 py-5">
             <div className="col-md-8 mx-auto">
