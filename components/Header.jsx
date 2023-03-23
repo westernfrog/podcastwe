@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Contact from "./Contact";
+import { Text } from "@nextui-org/react";
 
 export default function Header() {
   return (
@@ -7,11 +8,16 @@ export default function Header() {
       <div className="sticky-top bg-nav">
         <nav className="container navbar navbar-expand-lg navbar-dark">
           <div className="container-fluid py-1 px-0">
-            <Link
-              className="navbar-brand text-poppins text-uppercase text-shadow-3"
-              href="/"
-            >
-              PodcastWe
+            <Link className="navbar-brand" href="/">
+              <Text
+                h4
+                css={{
+                  textGradient: "45deg, $purple800 -20%, #ffffff 100%",
+                }}
+                className="text-uppercase text-shadow-3 mb-0"
+              >
+                Podcastwe
+              </Text>
             </Link>
             <button
               className="navbar-toggler border-0 px-0"
