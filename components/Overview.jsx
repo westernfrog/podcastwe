@@ -36,7 +36,7 @@ export default function Overview(props) {
       <div className="container my-4">
         <div className="row display-0 text-poppins text-uppercase text-shadow-2 text-white">
           <div className="col-sm">
-            <span className="align-middle">Listen</span>
+            <span className="align-middle">Grasp</span>
             <div className="media align-items-center d-none">
               <Image
                 src={image1}
@@ -45,13 +45,12 @@ export default function Overview(props) {
                 width={500}
                 height={500}
                 loading="lazy"
-                onError={() => <div>Loading...</div>}
               />
             </div>
           </div>
           <div className="col-sm-4 d-lg-block d-none pic1 rounded-pill my-3 bg-shadow"></div>
-          <div className="col-sm">
-            <span className="align-middle">New</span>
+          <div className="col">
+            <span className="align-middle">new</span>
             <div className="media align-items-center d-none">
               <Image
                 src={image2}
@@ -60,7 +59,6 @@ export default function Overview(props) {
                 width={500}
                 height={500}
                 loading="lazy"
-                onError={() => <div>Loading...</div>}
               />
             </div>
           </div>
@@ -75,13 +73,12 @@ export default function Overview(props) {
                 width={500}
                 height={500}
                 loading="lazy"
-                onError={() => <div>Loading...</div>}
               />
             </div>
           </div>
           <div className="col-sm-3 d-lg-block d-none pic2 rounded-pill my-3 bg-shadow"></div>
           <div className="col-sm">
-            <span className="align-middle">Order</span>
+            <span className="align-middle">Tech</span>
           </div>
         </div>
 
@@ -97,7 +94,7 @@ export default function Overview(props) {
           </div>
           <div className="container-fluid col-md-6 my-5 my-lg-0 text-center">
             <h1
-              className="fs-5 text-md-start mb-4 text-white"
+              className="fs-4 text-md-start mb-4 text-white"
               style={{
                 position: "sticky",
                 top: "0",
