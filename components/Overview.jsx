@@ -44,7 +44,7 @@ export default function Overview(props) {
                 alt="pic1"
                 width={500}
                 height={500}
-                loading="lazy"
+                priority="true"
               />
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function Overview(props) {
                 alt="pic2"
                 width={500}
                 height={500}
-                loading="lazy"
+                priority="true"
               />
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function Overview(props) {
                 alt="pic4"
                 width={500}
                 height={500}
-                loading="lazy"
+                priority="true"
               />
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function Overview(props) {
           <div
             className={`${className} my-5 p-5 d-flex align-items-center w-100 pic4 bg-shadow`}
             style={{ height: 500 }}
-            loading="lazy"
+            priority="true"
           ></div>
         </div>
       </div>

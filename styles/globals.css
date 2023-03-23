@@ -126,6 +126,7 @@ a {
   background: url("../public/image4.jpg");
   background-size: cover;
   background-position: center;
+  image-rendering: optimizeSpeed;
 }
 .image {
   background-image: url("https://source.unsplash.com/random/?music");
