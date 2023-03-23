@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 export function useRandomPodcastPhoto(props) {
+  const unsplash_api_key = "-EhqJf2oW_B3R3y6lBW70uTolREUZTDKKLooDkyZa5U";
   const [showDesc, setShowDesc] = useState(false);
   const [photoUrl, setPhotoUrl] = useState(null);
 
@@ -13,8 +14,7 @@ export function useRandomPodcastPhoto(props) {
   };
 
   async function getRandomPodcastPhoto() {
-    const defaultApi =
-      "https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=-EhqJf2oW_B3R3y6lBW70uTolREUZTDKKLooDkyZa5U";
+    const defaultApi = `https://api.unsplash.com/photos/random/?query=podcast&orientation=landscape&client_id=${unsplash_api_key}`;
     const apiUrlData = await fetch(defaultApi);
     const apiData = await apiUrlData.json();
     const photoUrl = apiData.urls.regular;
