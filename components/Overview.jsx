@@ -14,7 +14,7 @@ export default function Overview(props) {
     const handleResize = () => {
       const width = window.innerWidth;
       if (width <= 768) {
-        setClassName("rounded-5");
+        setClassName("rounded-6");
       } else {
         setClassName("rounded-7");
       }
