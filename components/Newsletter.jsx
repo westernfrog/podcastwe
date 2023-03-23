@@ -4,13 +4,12 @@ import { useState } from "react";
 export default function Newsletter() {
   const [email, setEmail] = useState("");
   const [subscribeSuccess, setSubscribeSuccess] = useState("Subscribe");
+  const [subscribeSuccessColor, setSubscribeSuccessColor] =
+    useState("secondary");
   const [popUp, setPopUp] = useState("");
   const [resColor, setResColor] = useState("");
 
   const handleSubscribe = async () => {
-    if (!email) {
-      setPopUp("Please enter a valid email address");
-    }
     try {
       const response = await fetch("/api/newsletter", {
         method: "POST",
@@ -25,9 +24,9 @@ export default function Newsletter() {
         setSubscribeSuccess("Subscribed");
         setPopUp("Thank you for subscribing!");
         setResColor("text-success");
+        setSubscribeSuccessColor("success");
       } else if (!email) {
         setPopUp("Please enter a valid email address");
-
         setResColor("text-danger");
       } else {
         setPopUp("An error occurred or you already have subscribed!");
@@ -76,10 +75,9 @@ export default function Newsletter() {
                 Email address
               </label>
             </div>
-
             <Button
               flat
-              color="secondary"
+              color={subscribeSuccessColor}
               auto
               className="rounded-5 w-100 text-shadow-3"
               style={{ opacity: "0.9" }}
