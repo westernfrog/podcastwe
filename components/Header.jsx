@@ -1,23 +1,17 @@
 import Link from "next/link";
 import Contact from "./Contact";
-import { Text } from "@nextui-org/react";
 
 export default function Header() {
   return (
     <>
       <div className="sticky-top bg-nav">
         <nav className="container navbar navbar-expand-lg navbar-dark">
-          <div className="container-fluid py-2 px-0">
-            <Link className="navbar-brand" href="/">
-              <Text
-                h4
-                css={{
-                  textGradient: "45deg, $purple800 -20%, #ffffff 100%",
-                }}
-                className="text-uppercase text-shadow-3 mb-0"
-              >
-                Podcastwe
-              </Text>
+          <div className="container-fluid py-1 px-0">
+            <Link
+              className="navbar-brand text-uppercase text-poppins text-shadow-3 mb-0"
+              href="/"
+            >
+              Podcastwe
             </Link>
             <button
               className="navbar-toggler border-0 px-0"
@@ -99,14 +93,14 @@ export default function Header() {
                   { href: "/about", label: "About Us" },
                 ].map(({ href, label }, index) => (
                   <li className="nav-item" key={index}>
-                    <Link className="nav-link text-shadow-3 fs-6" href={href}>
+                    <Link className="nav-link text-shadow-3" href={href}>
                       {label}
                     </Link>
                   </li>
                 ))}
                 <li className="nav-item">
                   <p
-                    className="nav-link fs-6 text-shadow-3"
+                    className="nav-link fs-7 text-shadow-3"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                   >
