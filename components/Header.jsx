@@ -4,7 +4,7 @@ import Contact from "./Contact";
 export default function Header() {
   return (
     <>
-      <div className="sticky-top bg-nav">
+      <div className="sticky-top bg-nav header-shadow">
         <nav className="container navbar navbar-expand-lg navbar-dark">
           <div className="container-fluid py-1 px-0">
             <Link
@@ -55,8 +55,8 @@ export default function Header() {
                   {[
                     { href: "/", label: "Home" },
                     { href: "/latest", label: "Latest" },
-                    { href: "/news", label: "News" },
-                    { href: "/trending", label: "Trending" },
+                    { href: "#news", label: "News" },
+                    { href: "#trending", label: "Trending" },
                     { href: "/about", label: "About Us" },
                   ].map(({ href, label }, index) => (
                     <li className="nav-item" key={index}>
@@ -88,19 +88,19 @@ export default function Header() {
                 {[
                   { href: "/", label: "Home" },
                   { href: "/latest", label: "Latest" },
-                  { href: "/news", label: "News" },
-                  { href: "/trending", label: "Trending" },
+                  { href: "/#news", label: "News" },
+                  { href: "/#trending", label: "Trending" },
                   { href: "/about", label: "About Us" },
                 ].map(({ href, label }, index) => (
                   <li className="nav-item" key={index}>
-                    <Link className="nav-link text-shadow-3" href={href}>
+                    <Link className="nav-link text-shadow-4" href={href}>
                       {label}
                     </Link>
                   </li>
                 ))}
                 <li className="nav-item">
                   <p
-                    className="nav-link fs-7 text-shadow-3"
+                    className="nav-link fs-7 text-shadow-4"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                   >

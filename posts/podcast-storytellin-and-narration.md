@@ -11,7 +11,7 @@ tags:
 
 #### What is Podcasting?
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 Podcast is a digital audio and video file distributed on internet that can be downloaded.
 <br/>
 Podcast speakers should be portable and have good sound quality.
@@ -25,7 +25,7 @@ Always use a dynamic microphone for podcasting.
 
 <br/>
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 Podcast storytelling is a method of creating compelling, engaging, and informative content for a podcast through the use of storytelling techniques and narrative structure. Here are some key elements of podcast storytelling:
 </p>
 
@@ -37,7 +37,7 @@ Podcast storytelling is a method of creating compelling, engaging, and informati
 1. **Sound effects:** Sound effects can be used to enhance the storytelling experience by creating atmosphere, adding emphasis, and bringing the story to life.
 1. **Music:** Music can be used to set the tone, create atmosphere, and add emotional depth to a podcast story.
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 The most important aspect of podcast storytelling is to keep the listener engaged and invested in the story. To achieve this, it is essential to have a clear narrative structure, well-developed characters, and an engaging storyline.
 </p>
 
@@ -45,7 +45,7 @@ The most important aspect of podcast storytelling is to keep the listener engage
 
 #### Different Forms Of Podcast Storytelling
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 There are several methods for podcast storytelling, here are some of the most common ones:
 </p>
 
@@ -57,7 +57,7 @@ There are several methods for podcast storytelling, here are some of the most co
 1. **Solo storytelling:** In this style, the host tells a personal story, often in a confessional or introspective manner.
 1. **Hybrid storytelling:** Many podcasts utilize a combination of different storytelling methods, such as incorporating interviews and sound effects into a narrative structure.
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 Regardless of the method used, the goal of podcast storytelling is to engage the listener and create a compelling, memorable experience. To achieve this, it's important to have a clear narrative structure, well-crafted characters, and engaging audio elements.
 </p>
 
@@ -65,7 +65,7 @@ Regardless of the method used, the goal of podcast storytelling is to engage the
 
 #### Narrative Storytelling:
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 Narrative storytelling is a method of podcasting where the host tells a story in a traditional narrative format, with a clear beginning, middle, and end. This style can be used to tell fiction or non-fiction stories, and the goal is to engage the listener and take them on a journey through the story.
 <br/>
 To create effective narrative storytelling in a podcast, it's important to have a clear structure and a well-developed plot. Characters should be well-defined and engaging, and the pacing of the story should be varied to keep the listener interested. Audio elements such as sound effects, music, and interviews can also be incorporated to add depth and texture to the story.
@@ -74,7 +74,7 @@ Ultimately, the success of narrative storytelling in a podcast depends on the ab
 
 #### Interview Based Storytelling:
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 Interview-based storytelling is a style of podcasting where the host conducts interviews with different individuals and uses their stories as the basis of the podcast. The host may ask questions and guide the conversation to highlight specific aspects of the interviewee's story, but the focus is on letting the interviewee speak and share their experiences.<br/>
 This type of storytelling can be used to cover a wide range of topics and perspectives, from personal experiences to expert opinions. It can also be used to tell stories in a more informal and conversational manner, allowing the listener to feel like they are a part of the conversation.<br/>
 To create an effective interview-based podcast, it's important to have a clear focus for each episode and to choose interviewees who are knowledgeable and engaging. The host should also be prepared with well-researched questions and be able to guide the conversation in an interesting and meaningful way.<br/>
@@ -83,7 +83,7 @@ Overall, interview-based storytelling can be a great way to create an engaging a
 
 #### Documentary Storytelling:
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 Documentary storytelling is a style of podcasting where the host or producer creates a narrative that follows a specific topic or theme. This type of storytelling is often used to explore complex or controversial issues, or to tell the story of a person or event in a detailed and in-depth manner.
 <br/>
 Documentary storytelling in podcasting can involve extensive research, interviews with experts and those directly involved in the story, as well as the use of archival materials and audio clips to create a comprehensive and engaging narrative.
@@ -93,7 +93,7 @@ In conclusion, documentary storytelling is a powerful tool in podcasting that ca
 
 #### Searialized Storytelling:
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 Serialized storytelling is a type of storytelling in podcasting where the content is released in a series of episodes over time, much like a TV show. Each episode builds on the story and develops the narrative, creating a sense of anticipation and excitement for the listener.
 Serialized storytelling is often used in fiction podcasts, where the host or producer creates an original story with characters and plot twists that are revealed over the course of multiple episodes. This type of storytelling can be especially effective in capturing the listener's attention and keeping them engaged, as they eagerly await the next episode to find out what happens next.<br/>
 In addition to fiction podcasts, serialized storytelling can also be used in non-fiction podcasts, where the host covers a specific topic in a series of episodes, building on the information and insights shared in each episode to create a comprehensive and in-depth exploration of the subject.<br/>
@@ -103,7 +103,7 @@ Overall, serialized storytelling is a popular and effective style of podcasting 
 
 #### Improvised Storytelling:
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 Improvised storytelling is a type of storytelling in podcasting that is created on the spot, without a pre-written script or plan. It is often used in comedy or entertainment podcasts, where the host or guests use their quick wit and improvisational skills to create a spontaneous and unscripted story.<br/>
 Improvised storytelling in podcasting can be a lot of fun for both the hosts and listeners, as it allows for unexpected twists and turns in the story and keeps everyone on their toes. The key to successful improvised storytelling is to have a strong sense of humor, the ability to think on your feet, and a willingness to take risks and try new things.<br/>
 While improvised storytelling can be challenging, it can also be incredibly rewarding, as it allows for creative freedom and spontaneity that is not always possible with more structured forms of storytelling.<br/>
@@ -113,12 +113,12 @@ Overall, improvised storytelling can be a great way to add a fun and lighthearte
 
 #### Solo Storytelling:
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 Solo storytelling refers to a podcast format where one person narrates a story or shares their thoughts, experiences, and insights without any guests or co-hosts. It is a way of delivering content that is personal, intimate and allows the audience to connect with the host on a deeper level. Solo storytelling podcasts often cover a wide range of topics, from personal stories, to fiction, to reflections on current events, to interviews with experts in specific fields.
 </p>
 
 #### Hybrid Storytelling:
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 Hybrid storytelling is a type of podcast storytelling that combines elements of different podcast formats, including solo storytelling, interview-based storytelling, documentary storytelling, serialized storytelling, and more. This type of storytelling allows podcasters to be creative and flexible in their approach to content creation, and to incorporate different elements that will appeal to their target audience. For example, a hybrid storytelling podcast might start with a solo episode about a personal experience, followed by an interview with an expert in a related field, and then conclude with a series of serialized episodes exploring a specific topic in depth. The goal of hybrid storytelling is to offer a well-rounded and engaging listening experience for the audience.
 </p>

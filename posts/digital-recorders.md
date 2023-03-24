@@ -6,7 +6,7 @@ tags:
 
 #### Digital Recorder
 
-<p style="font-size:17px;opacity:0.8">
+<p style="font-size:17px;font-weight:400">
 A digital recorder is a device used to capture audio in a digital format for later use, such as editing and processing. Digital recorders can range from handheld units to larger multi-channel devices, and are commonly used in podcasting to record interviews, audio diaries, and other audio content. They can be especially useful in podcasting due to their ease of use, portability, and ability to record high-quality audio, making them an important tool in the podcasting production process.</p>
 
 <br>
@@ -21,4 +21,4 @@ A digital recorder is a device used to capture audio in a digital format for lat
 1. H4n Pro Zoom Handy Recorder
 1. Boss BR-800 Portable Digital Recorder
 
-<p style="font-size:17px;opacity:0.8">Note that the best digital recorder for you will depend on your specific needs, budget, and the type of podcast you produce.</p>
+<p style="font-size:17px;font-weight:400">Note that the best digital recorder for you will depend on your specific needs, budget, and the type of podcast you produce.</p>

@@ -5,45 +5,6 @@ import { useRandomPodcastPhoto } from "./GetRandomPhotos";
 export default function LatestCard(props) {
   const { photoUrl } = useRandomPodcastPhoto({ id: props.id });
 
-  if (!photoUrl) {
-    return (
-      <Grid sm={6} md={props.col} className="g-4">
-        <Link href={`/blog/${props.url}`} className="w-100">
-          <Card
-            isPressable
-            isHoverable
-            css={{ h: "300px" }}
-            style={{ backgroundColor: "#ffffff20" }}
-          >
-            <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
-              <Col>
-                <Text
-                  size={12}
-                  weight="bold"
-                  transform="uppercase"
-                  color="#9E9E9E"
-                >
-                  New
-                </Text>
-                <Text h3 color="white" className="text-shadow-3">
-                  {props.title}
-                </Text>
-              </Col>
-            </Card.Header>
-            <Card.Body css={{ p: 0 }}>
-              <Loading
-                className="my-auto"
-                type="points-opacity"
-                color="white"
-                size="xl"
-              />
-            </Card.Body>
-          </Card>
-        </Link>
-      </Grid>
-    );
-  }
-
   return (
     <>
       <Grid sm={6} md={props.col} className="g-4">

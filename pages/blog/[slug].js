@@ -15,42 +15,45 @@ export default function PostPage({ frontmatter: { title }, content }) {
 
   return (
     <>
-      <div className="container">
-        <Card
-          css={{ w: "100%", h: "400px" }}
-          style={{ backgroundColor: "inherit" }}
-        >
-          <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
-            <Col>
-              <Text
-                size={12}
-                transform="uppercase"
-                color="#ffffffAA"
-                className="col-5 text-shadow-3"
-              >
-                Blog
-              </Text>
-              <Text h1 color="white" className="text-shadow-3 display-3">
-                {title}
-              </Text>
-            </Col>
-          </Card.Header>
-          <Card.Body css={{ p: 0 }}>
-            {myItem && (
-              <Card.Image
-                src={myItem}
-                width="100%"
-                height="100%"
-                objectFit="cover"
-                alt="Card image background"
-              />
-            )}
-          </Card.Body>
-        </Card>
-        <div
-          className="my-5 pb-5 text-white"
-          dangerouslySetInnerHTML={{ __html: marked(content) }}
-        ></div>
+      <div className="bg-white">
+        <div className="container">
+          <Card
+            css={{ w: "100%", h: "400px" }}
+            style={{ backgroundColor: "inherit" }}
+          >
+            <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
+              <Col className="my-3 py-5 px-3">
+                <Text
+                  size={12}
+                  transform="uppercase"
+                  color="#ffffffAA"
+                  className="col-5 text-shadow-3"
+                >
+                  Blog
+                </Text>
+                <Text h1 color="white" className="text-shadow-3 display-3">
+                  {title}
+                </Text>
+              </Col>
+            </Card.Header>
+            <Card.Body css={{ p: 0 }}>
+              {myItem && (
+                <Card.Image
+                  src={myItem}
+                  width="100%"
+                  height="100%"
+                  objectFit="cover"
+                  alt="Card image background"
+                  className="mt-5 rounded-7"
+                />
+              )}
+            </Card.Body>
+          </Card>
+          <div
+            className="my-5 pb-5 text-black"
+            dangerouslySetInnerHTML={{ __html: marked(content) }}
+          ></div>
+        </div>
       </div>
     </>
   );

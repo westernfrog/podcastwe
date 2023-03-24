@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Body */
 body {
-  background: radial-gradient(circle at top left, #111, #000);
+  background: radial-gradient(circle at top left, #0f0e0e, #000);
   overflow-x: hidden;
 }
 
@@ -28,8 +32,6 @@ body {
 ul,
 ol {
   padding-left: 0 !important;
-  color: #fff;
-  opacity: 0.8;
 }
 
 /* Fonts */
@@ -81,7 +83,13 @@ h6,
 
 /* Borders */
 .bg-shadow {
-  box-shadow: 0 10rem 7rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15rem 5rem rgba(0, 0, 0, 0.15);
+}
+.footer-shadow {
+  box-shadow: 0 -3rem 20rem #000;
+}
+.header-shadow {
+  box-shadow: 0 2rem 8rem #000;
 }
 
 .rounded-7 {
@@ -179,6 +187,9 @@ a {
 }
 .text-shadow-3 {
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.text-shadow-4 {
+  text-shadow: 1px 1px 2px #000;
 }
 .card-cover {
   background-repeat: no-repeat;
