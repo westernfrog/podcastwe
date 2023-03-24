@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <>
       <div className="footer-shadow">
-        <div className="container pb-3">
+        <div className="container py-3">
           <div className="container-fluid px-0">
             <footer className="row my-4">
               <div className="col-md-4 mb-4 mb-lg-0">

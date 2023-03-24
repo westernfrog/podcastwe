@@ -3,7 +3,7 @@ export default function About() {
     <>
       <div className="container col-md-8 my-1 my-lg-4 py-1 py-lg-5">
         <div className="card border rounded-6 text-light mx-auto bg-grey">
-          <div className="card-header border bg-inherit mt-3">
+          <div className="card-header bg-inherit mt-3">
             <h1 className="text-poppins">What is this PODCASTWE?</h1>
           </div>
           <div className="card-body text-light">

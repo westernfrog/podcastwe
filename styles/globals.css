@@ -4,7 +4,7 @@ html {
 
 /* Body */
 body {
-  background: radial-gradient(circle at top left, #0f0e0e, #000);
+  background: radial-gradient(circle at top left, #111, #000);
   overflow-x: hidden;
 }
 
@@ -89,7 +89,7 @@ h6,
   box-shadow: 0 -3rem 8rem #000;
 }
 .header-shadow {
-  box-shadow: 0 3rem 8rem #000;
+  box-shadow: 0 2rem 10rem #000;
 }
 
 .rounded-7 {
