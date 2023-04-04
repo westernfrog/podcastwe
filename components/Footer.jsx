@@ -52,7 +52,7 @@ export default function Footer() {
                   </li>
                   <li className="nav-item mb-2">
                     <Link
-                      href="/news"
+                      href="/#news"
                       className="nav-link p-0 text-muted fw-bold mx-0"
                     >
                       News
@@ -60,7 +60,7 @@ export default function Footer() {
                   </li>
                   <li className="nav-item mb-2">
                     <Link
-                      href="/trending"
+                      href="/#trending"
                       className="nav-link p-0 text-muted fw-bold mx-0"
                     >
                       Trending
